@@ -1,0 +1,255 @@
+﻿@model HomeVM
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<main>
+    <section class="todaytitle">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>Today's Top Growing Communities</h1>
+                    <p>
+                        Browse Reddit's top growing communities. Find the top communities in your favorite category.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="Topmain mt-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2">
+                    <div class="Catagory">
+                        <div class="title">
+                            <p>Categories</p>
+                        </div>
+                        <div>
+                            <a href="">
+                                <p>All Communities</p>
+                            </a>
+                            <a href="">
+                                <p>Near You</p>
+                            </a>
+                            <a href="">
+                                <p>Sports</p>
+                            </a>
+                            <a href="">
+                                <p>Gaming</p>
+                            </a>
+                            <a href="">
+                                <p>News</p>
+                            </a>
+                            <a href="">
+                                <p>TV</p>
+                            </a>
+                            <a href="">
+                                <p>Aww</p>
+                            </a>
+                            <a href="">
+                                <p>Memes</p>
+                            </a>
+                            <a href="">
+                                <p>Pics & Gifs</p>
+                            </a>
+                            <a href="">
+                                <p>Travel</p>
+                            </a>
+                            <a href="">
+                                <p>Tech</p>
+                            </a>
+                            <a href="">
+                                <p>Music</p>
+                            </a>
+                        </div>
+                        <div>
+                            <button>Show More</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="top">
+                        <div class="title">
+                            <p>Today's Top Growing Communities</p>
+                        </div>
+                        @foreach (Post item in Model.posts)
+                        {
+                            <div class="user">
+                                <div class="name">
+                                    <a href="">@item.Id</a>
+                                    <a href=""><i class="fa-solid fa-angle-up"></i></a>
+                                    <a href="">
+                                        <img src="@item.UserImage"
+                                         alt="">
+                                    </a>
+                                    <a href=""></a>
+                                    <a href="">@item.UserName</a>
+                                </div>
+                                <div class="button" id="myBtn">
+                                    <button>join</button>
+                                </div>
+                            </div>
+
+                        }
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="E3">
+                        <div class="image">
+                            <img src="https://styles.redditmedia.com/t5_2qwis/styles/bannerBackgroundImage_xsfxgk8a28g01.png"
+                                 alt="">
+                            <P>Top E3 Communities</P>
+                        </div>
+
+                        @foreach (Post item in Model.posts)
+                        {
+
+                            @if (@item.Id <= 5)
+                            {
+                                <div class="users">
+                                    <a href="">@item.Id</a>
+                                    <a href=""><i class="fa-solid fa-angle-up"></i></a>
+                                    <a href="">
+                                        <img src="@item.UserImage"
+                                     alt="">
+                                    </a>
+                                    <a href=""></a>
+                                    <a href="">@item.UserName</a>
+                                </div>
+                            }
+
+                        }
+
+                        <div class="button">
+                            <button>See All E3</button>
+                        </div>
+                    </div>
+                    <div class="E3 mt-3">
+                        <div class="image">
+                            <img src="https://www.redditstatic.com/desktop2x/img/leaderboard/banner-background.png"
+                                 alt="">
+                            <P>Top Food Communities</P>
+                        </div>
+                        @foreach (Post item in Model.posts)
+                        {
+
+                            @if (@item.Id <= 5)
+                            {
+                                <div class="users">
+                                    <a href="">@item.Id</a>
+                                    <a href=""><i class="fa-solid fa-angle-up"></i></a>
+                                    <a href="">
+                                        <img src="@item.UserImage"
+                                     alt="">
+                                    </a>
+                                    <a href=""></a>
+                                    <a href="">@item.UserName</a>
+                                </div>
+                            }
+
+                        }
+                        <div class="button">
+                            <button>See All Food</button>
+                        </div>
+                    </div>
+                    <div class="browse mt-3">
+                        <div class="TITLE">
+                            <p>Browse Communities A-Z</p>
+                        </div>
+                        <div>
+                            <p>A B C D E F G H I J K L M N O P Q R S T U V W X Y Z #</p>
+                        </div>
+                    </div>
+                    <div class="MORE mt-3">
+                        <div>
+                            <a href=""><p>Help</p></a>
+                            <a href=""><p>Reddit Coins</p></a>
+                            <a href=""><p>Reddit Premium</p></a>
+                        </div>
+                        <div>
+                            <a href=""><p>About</p></a>
+                            <a href=""><p>Careers</p></a>
+                            <a href=""><p>Press</p></a>
+                            <a href=""><p>Advertise</p></a>
+                            <a href=""><p>Blog</p></a>
+                            <a href=""><p>Terms</p></a>
+                            <a href=""><p>Content Policy</p></a>
+                            <a href=""><p>Privacy Policy</p></a>
+                            <a href=""><p>Mod Policy</p></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="myModal" class="modal">
+        <div class="modal-content">
+            <div class="conten">
+                <div class="image">
+                    <img src="../image/Screenshot 2022-07-18 164325.png" alt="">
+                </div>
+                <div class="form">
+                    <div class="title">
+                        <strong>Sign up to join this community.</strong>
+                        <p class="mt-1">
+                            By continuing, you are setting up a Reddit account and agree to our <a href="">
+                                User
+                                Agreement
+                            </a> and <a href="">Privacy Policy</a>.
+                        </p>
+                    </div>
+                    <div class="sosial mt-5">
+                        <div class="google">
+                            <div>
+                                <a href=""><img src="../image/s1AjSxph_400x400.jpg" alt=""></a>
+                            </div>
+                            <div>
+                                <a href="">Continue with Google</a>
+                            </div>
+                        </div>
+                        <div class="iphone mt-2">
+                            <div>
+                                <a href=""><img src="../image/apple-logo-E3DBF3AE34-seeklogo.com.png" alt=""></a>
+                            </div>
+                            <div>
+                                <a href="">Continue with Apple</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="or mt-5">
+                        <div class="line"></div>
+                        <div>
+                            <p>OR</p>
+                        </div>
+                        <div class="line"></div>
+                    </div>
+                    <div class="username">
+                        <div class="input">
+                            <input type="text" placeholder="User Name" class="inp">
+                        </div>
+                    </div>
+                    <div class="Password mt-3">
+                        <div class="input">
+                            <input type="password" placeholder="EMAIL" class="inp">
+                        </div>
+                    </div>
+                    <div class="continue mt-3">
+                        <button class="button" type="submit"><strong>Continue</strong></button>
+                    </div>
+                    <div class="login mt-4">
+                        <p>Already a redditor? <a href="../html/Register.html"> <strong>Register</strong></a></p>
+                    </div>
+                </div>
+                <div class="clos">
+                    <span class="close">&times;</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>
+

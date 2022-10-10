@@ -1,0 +1,1421 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortout icon" type="image/x-icon" href="../image/unnamed.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/Bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../scss/style.css">
+    <title>Reddit</title>
+</head>
+
+<body>
+
+    <header class="header">
+        <nav>
+            <div class="contain">
+                <div class="row">
+                    <div class="col-lg-2 col-sm-3 col-md-3 col-3 svg">
+                        <a aria-label="Home" class="_30BbATRhFv3V83DHNDjJAO" href="/">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                                class="_1O4jTk-dZ-VIxsCuYB6OR8 ">
+                                <g>
+                                    <circle fill="#FF4500" cx="10" cy="10" r="10"></circle>
+                                    <path fill="#FFF"
+                                        d="M16.67,10A1.46,1.46,0,0,0,14.2,9a7.12,7.12,0,0,0-3.85-1.23L11,4.65,13.14,5.1a1,1,0,1,0,.13-0.61L10.82,4a0.31,0.31,0,0,0-.37.24L9.71,7.71a7.14,7.14,0,0,0-3.9,1.23A1.46,1.46,0,1,0,4.2,11.33a2.87,2.87,0,0,0,0,.44c0,2.24,2.61,4.06,5.83,4.06s5.83-1.82,5.83-4.06a2.87,2.87,0,0,0,0-.44A1.46,1.46,0,0,0,16.67,10Zm-10,1a1,1,0,1,1,1,1A1,1,0,0,1,6.67,11Zm5.81,2.75a3.84,3.84,0,0,1-2.47.77,3.84,3.84,0,0,1-2.47-.77,0.27,0.27,0,0,1,.38-0.38A3.27,3.27,0,0,0,10,14a3.28,3.28,0,0,0,2.09-.61A0.27,0.27,0,1,1,12.48,13.79Zm-0.18-1.71a1,1,0,1,1,1-1A1,1,0,0,1,12.29,12.08Z">
+                                    </path>
+                                </g>
+                            </svg>
+                            <svg class="_1bWuGs_1sq4Pqy099x_yy-" viewBox="0 0 57 18" xmlns="http://www.w3.org/2000/svg">
+                                <g fill="#1c1c1c">
+                                    <path
+                                        d="M54.63,16.52V7.68h1a1,1,0,0,0,1.09-1V6.65a1,1,0,0,0-.93-1.12H54.63V3.88a1.23,1.23,0,0,0-1.12-1.23,1.2,1.2,0,0,0-1.27,1.11V5.55h-1a1,1,0,0,0-1.09,1v.07a1,1,0,0,0,.93,1.12h1.13v8.81a1.19,1.19,0,0,0,1.19,1.19h0a1.19,1.19,0,0,0,1.25-1.12A.17.17,0,0,0,54.63,16.52Z">
+                                    </path>
+                                    <circle fill="#FF4500" cx="47.26" cy="3.44" r="2.12"></circle>
+                                    <path d="M48.44,7.81a1.19,1.19,0,1,0-2.38,0h0v8.71a1.19,1.19,0,0,0,2.38,0Z"></path>
+                                    <path
+                                        d="M30.84,1.19A1.19,1.19,0,0,0,29.65,0h0a1.19,1.19,0,0,0-1.19,1.19V6.51a4.11,4.11,0,0,0-3-1.21c-3.1,0-5.69,2.85-5.69,6.35S22.28,18,25.42,18a4.26,4.26,0,0,0,3.1-1.23,1.17,1.17,0,0,0,1.47.8,1.2,1.2,0,0,0,.85-1.05ZM25.41,15.64c-1.83,0-3.32-1.77-3.32-4s1.48-4,3.32-4,3.31,1.78,3.31,4-1.47,3.95-3.3,3.95Z">
+                                    </path>
+                                    <path
+                                        d="M43.28,1.19A1.19,1.19,0,0,0,42.09,0h0a1.18,1.18,0,0,0-1.18,1.19h0V6.51a4.15,4.15,0,0,0-3-1.21c-3.1,0-5.69,2.85-5.69,6.35S34.72,18,37.86,18A4.26,4.26,0,0,0,41,16.77a1.17,1.17,0,0,0,1.47.8,1.19,1.19,0,0,0,.85-1.05ZM37.85,15.64c-1.83,0-3.31-1.77-3.31-4s1.47-4,3.31-4,3.31,1.78,3.31,4-1.47,3.95-3.3,3.95Z">
+                                    </path>
+                                    <path
+                                        d="M17.27,12.44a1.49,1.49,0,0,0,1.59-1.38v-.15a4.81,4.81,0,0,0-.1-.85A5.83,5.83,0,0,0,13.25,5.3c-3.1,0-5.69,2.85-5.69,6.35S10.11,18,13.25,18a5.66,5.66,0,0,0,4.39-1.84,1.23,1.23,0,0,0-.08-1.74l-.11-.09a1.29,1.29,0,0,0-1.58.17,3.91,3.91,0,0,1-2.62,1.12A3.54,3.54,0,0,1,10,12.44h7.27Zm-4-4.76a3.41,3.41,0,0,1,3.09,2.64H10.14A3.41,3.41,0,0,1,13.24,7.68Z">
+                                    </path>
+                                    <path
+                                        d="M7.68,6.53a1.19,1.19,0,0,0-1-1.18A4.56,4.56,0,0,0,2.39,6.91V6.75A1.2,1.2,0,0,0,0,6.75v9.77a1.23,1.23,0,0,0,1.12,1.24,1.19,1.19,0,0,0,1.26-1.1.66.66,0,0,0,0-.14v-5A3.62,3.62,0,0,1,5.81,7.7a4.87,4.87,0,0,1,.54,0h.24A1.18,1.18,0,0,0,7.68,6.53Z">
+                                    </path>
+                                </g>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="col-lg-6 col-sm-6 col-md-6 col-6 search mt-2">
+                        <form action="search">
+                            <label for="">
+                                <div>
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </div>
+                            </label>
+                            <input type="text" placeholder="Serach Reddit" class="input" id="search-byid">
+                        </form>
+                    </div>
+                    <div class="col-lg-4 col-sm-3 col-md-3 col-3 mt-2 account">
+                        <div class="button">
+                            <button id="myBtn"><strong>Log In</strong></button>
+                            <button class="sign"><a href="../html/Register.html">Sign In</a></button>
+                        </div>
+                        <div class="icon">
+                            <button class="dropdown-btn">
+                                <a class="a"><i class="fa-regular fa-user i"></i><i
+                                        class="fa-solid fa-angle-down i"></i></a>
+                            </button>
+                            <div class="dropdown-container">
+                                <div class="drop">
+                                    <a href="../html/premium.html"><i class="fa-regular fa-life-ring"></i> Premium</a>
+                                </div>
+
+                                <div class="drop">
+                                    <a href="#"><i class="fa-solid fa-bullseye"></i> Talk</a>
+                                </div>
+
+                                <div class="down">
+                                    <button class="dropdown-btn icon">
+                                        <a href="#"><i class="fa-solid fa-clock-rotate-left"></i> Recent Cpmmunities <i
+                                                class="fa-solid fa-angle-up i"></i></a>
+                                    </button>
+                                    <div class="dropdown-container">
+                                        <a href="../html/usermain.html"> <img
+                                                src="../image/communityIcon_6fzlk8ukx6s51.jpg" alt=""> A
+                                            subreddit for cut...</a>
+                                        <a href="../html/usermain.html"><img
+                                                src="../image/Rtu2Mw0L-mx7AeYtHKkbAh75jQbgzy_Hk2UIlLeZFSs.png" alt="">
+                                            Unexpected</a>
+                                    </div>
+                                </div>
+
+                                <div class="down">
+                                    <button class="dropdown-btn icon">
+                                        <a href="#"><i class="fa-brands fa-cc-discover"></i> Explore <i
+                                                class="fa-solid fa-angle-up i"></i></a>
+                                    </button>
+                                    <div class="dropdown-container">
+                                        <a href="#">Gaming</a>
+                                        <a href="#">Sports</a>
+                                        <a href="#">Television</a>
+                                        <a href="#">Celebrity</a>
+                                        <a href="#">Business,Economic</a>
+                                        <a href="#">Crypto</a>
+                                        <a href="#">More Topics</a>
+                                    </div>
+                                </div>
+
+                                <div class="down">
+                                    <button class="dropdown-btn icon">
+                                        <a href="#"><i class="fa-solid fa-gear"></i> Setting <i
+                                                class="fa-solid fa-angle-up i"></i></a>
+                                    </button>
+                                    <div class="dropdown-container">
+                                        <div>
+                                            <input type="checkbox" class="checkbox" id="checkbox">
+                                            <label for="checkbox" class="label">
+                                                <i class="fas fa-moon"></i>
+                                                <i class='fas fa-sun'></i>
+                                                <div class='ball'>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="drop">
+                                    <a href="#"><i class="fa-solid fa-bullhorn"></i> Advertise on Reddit</a>
+                                </div>
+
+                                <div class="drop">
+                                    <a href="#"><i class="fa-regular fa-circle-question"></i> Help Center</a>
+                                </div>
+
+                                <div class="down">
+                                    <button class="dropdown-btn icon">
+                                        <a href="#"><i class="fa-solid fa-circle-info"></i> More <i
+                                                class="fa-solid fa-angle-up i"></i></a>
+                                    </button>
+                                    <div class="dropdown-container">
+                                        <a
+                                            href="https://apps.apple.com/US/app/id1064216828?shortlink=b3d845e&is_retargeting=true&c=ios_reddit_footer&pid=reddit_footer">Reddit
+                                            IOS</a>
+                                        <a
+                                            href="https://play.google.com/store/apps/details?id=com.reddit.frontpage&shortlink=4c212f61&is_retargeting=true&c=android_reddit_footer&pid=reddit_footer">Reddit
+                                            Android</a>
+                                        <a href="">Blog</a>
+                                    </div>
+                                </div>
+
+                                <div class="down">
+                                    <button class="dropdown-btn icon"><a href="#"><i class="fa-solid fa-newspaper"></i>
+                                            Terms & Policies <i class="fa-solid fa-angle-up i"></i></a></button>
+                                    <div class="dropdown-container">
+                                        <a href="">User Agreement</a>
+                                        <a href="">Privacy Policy</a>
+                                        <a href="">Content Policy</a>
+                                        <a href="">Moderator Guidelnes</a>
+                                    </div>
+                                </div>
+
+                                <div class="drop">
+                                    <a href="#"><i class="fa-regular fa-address-card"></i> Sign Up or Log In</a>
+                                </div>
+
+                                <p class="p">© 2022 Reddit, Inc. All rights reserved</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <main>
+
+        <section class="userimg">
+            <img src="https://styles.redditmedia.com/t5_35n7t/styles/bannerBackgroundImage_1sm4lfrze6n71.png?width=4000&s=d4f49234b9864e8e01be9068b60d251bd95090ba"
+                alt="">
+        </section>
+
+        <section class="usname">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="title">
+                            <div>
+                                <img src="https://styles.redditmedia.com/t5_35n7t/styles/communityIcon_cn66l18a5zf51.png?width=256&s=9f22c26f97fe29afcf4e74cdb5fda3b6cc8852d2"
+                                    alt="">
+                            </div>
+                            <div>
+                                <h1>White People Twitter.</h1>
+                                <p>r/WhitePeopleTwitter</p>
+                            </div>
+                            <div class="button mt-2" id="myBtn">
+                                <button>join</button>
+                            </div>
+                        </div>
+                        <div class="pos">
+                            <a>
+                                <p class="p">Post</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="popnav mt-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-9 col-md-9 col-sm-9 col-9">
+                        <div class="nav mt-2">
+                            <div><a href="#" class="hot top"><strong><i class="fa-brands fa-hotjar"></i>
+                                        Hot</strong></a>
+                            </div>
+                            <div class="sidenav top">
+                                <button class="dropdown-btn">
+                                    <a><strong>Everywhere <i class="fa-solid fa-angle-down"></i></strong></a>
+                                </button>
+                                <div class="dropdown-container">
+                                    <a href="#" class="hvr">Ewerywhere</a>
+                                    <a href="#" class="hvr">United States</a>
+                                    <a href="#" class="hvr">Argentina</a>
+                                    <a href="#" class="hvr">Australia</a>
+                                    <a href="#" class="hvr">Bulgaria</a>
+                                    <a href="#" class="hvr">Canada</a>
+                                    <a href="#" class="hvr">Chile</a>
+                                    <a href="#" class="hvr">Colombia</a>
+                                    <a href="#" class="hvr">Croatia</a>
+                                </div>
+                            </div>
+                            <div class="a top"><a href="#"><strong><i class="fa-regular fa-sun"></i>
+                                        New</strong></a>
+                            </div>
+                            <div class="a top"><a href="#"><strong><i class="fa-solid fa-ranking-star"></i>
+                                        Top</strong></a>
+                            </div>
+                            <div class="a top"><a href="#"><strong>.....</strong></a></div>
+                            <div class="i sidenav top">
+                                <button class="dropdown-btn"><a><i class="fa-solid fa-table-cells-large"></i> <i
+                                            class="fa-solid fa-angle-down"></i></a></button>
+                                <div class="dropdown-container">
+                                    <a href="./usermain.html" class="hvr"><i class="fa-solid fa-table-cells-large"></i>
+                                        Card</a>
+                                    <a href="./userclassic.html" class="hvr classic"><i class="fa-solid fa-table-cells"></i>
+                                        Classic</a>
+                                    <a href="./userCompact.html" class="hvr"><i class="fa-solid fa-align-justify"></i>
+                                        Compact</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="popmain">
+                            <div class="contain">
+                                <div class="main allmain">
+                                    <div class="icon mt-2 mainicon">
+                                        <div><a href="#" class="i"><i class="fa-regular fa-heart"></i></a></div>
+                                        <div><a href="#">10</a></div>
+                                        <div><a href="#" class="i"><i class="fa-regular fa-heart s"></i></a></div>
+                                    </div>
+                                    <div class="post mt-2 postimages">
+                                        <a href="#" class="postimage"> <img
+                                                src="https://styles.redditmedia.com/t5_2qh87/styles/communityIcon_ub69d1lpjlf51.png"
+                                                alt=""></a>
+                                    </div>
+                                    <div class="all mt-2 allcomustit">
+                                        <div class="title titlemain" id="mainBtn">
+                                            <h1>
+                                                Looking to detect C++ issues in Visual Studio or CLion? SonarLint is
+                                                a free
+                                                extension for your IDE. Benefit from hundreds of rules to catch
+                                                Bugs,
+                                                Vulnerabilities, and Code Smells! Discover more:</h1>
+                                        </div>
+                                        <div class="username">
+                                            <div class="name namemain">
+                                                <a class="a">r/meirl</a>
+                                            </div>
+                                        </div>
+                                        <div class="comment commentmain">
+                                            <div class="enlargee">
+                                                <button class="dropdown-btn">
+                                                    <div class="enlarge">
+                                                        <a><i
+                                                                class="fa-solid fa-up-right-and-down-left-from-center enlarges"></i></a>
+                                                    </div>
+                                                </button>
+                                                <div class="dropdown-container">
+                                                    <a href="#"> <img
+                                                            src="https://styles.redditmedia.com/t5_2qh87/styles/communityIcon_ub69d1lpjlf51.png"
+                                                            alt=""></a>
+                                                </div>
+                                            </div>
+                                            <div class="com commain">
+                                                <div>
+                                                    <a><i class="fa-regular fa-message"></i></a>
+                                                </div>
+                                                <div>
+                                                    <a>0</a>
+                                                </div>
+                                                <div class="commenta">
+                                                    <a>Comments</a>
+                                                </div>
+                                            </div>
+                                            <div class="shar sharmain">
+                                                <button class="dropdown-btn">
+                                                    <div>
+                                                        <a><i class="fa-solid fa-share"></i></a>
+                                                    </div>
+                                                    <div>
+                                                        <a>Share</a>
+                                                    </div>
+                                                </button>
+                                                <div class="dropdown-container">
+                                                    <a href="#" class="a"><i class="fa-regular fa-copy"></i> Copy
+                                                        Link</a>
+                                                    <a href="#" class="a"><i
+                                                            class="fa-solid fa-arrows-left-right-to-line"></i>
+                                                        Embed</a>
+                                                </div>
+                                            </div>
+                                            <div class="save savemain">
+                                                <div>
+                                                    <a><i class="fa-regular fa-bookmark"></i></a>
+                                                </div>
+                                                <div>
+                                                    <a>Save</a>
+                                                </div>
+                                            </div>
+                                            <div class="hide hidemain">
+                                                <div>
+                                                    <a><i class="fa-regular fa-eye-slash"></i></a>
+                                                </div>
+                                                <div>
+                                                    <a>Hide</a>
+                                                </div>
+                                            </div>
+                                            <div class="rep repmain">
+                                                <div>
+                                                    <a><i class="fa-regular fa-flag"></i></a>
+                                                </div>
+                                                <div>
+                                                    <a>Report</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+                        <div class="channes mt-2">
+                            <div class="containchan">
+                                <div class="rowchan">
+                                    <div class="image">
+                                    </div>
+                                    <div class="user">
+                                        <div class="img">
+                                            <a href="">
+                                                <img src="https://styles.redditmedia.com/t5_2qhsa/styles/communityIcon_5v3bepmshpg81.png?width=256&s=4d4c7a59b5a0286f3e237b60eb6e0dc8948ede74"
+                                                    alt="">
+                                            </a>
+                                        </div>
+                                        <div class="username mt-3">
+                                            <a href="">r/interestingasfuck</a>
+                                        </div>
+                                    </div>
+                                    <div class="follow">
+                                        <div class="namemore">
+                                            <p>Welcome to r/Funny, Reddit's largest humour depository.</p>
+                                        </div>
+                                        <div class="member">
+                                            <div>
+                                                <p>5m</p>
+                                                <p class="onm">Members</p>
+                                            </div>
+                                            <div>
+                                                <p>3k</p>
+                                                <p class="onm">Online</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="age">
+                                        <div><i class="fa-solid fa-cake-candles"></i></div>
+                                        <div>
+                                            <p>Created Feb</p>
+                                        </div>
+                                        <div>
+                                            <p>25, 2016</p>
+                                        </div>
+                                    </div>
+                                    <div class="joinBtn">
+                                        <button><strong>Internet Culture and Memes</strong></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="prmim mt-3">
+                            <div class="contain">
+                                <div class="row">
+                                    <div class="icon">
+                                        <div class="color">
+                                            <p>Powerups</p>
+                                        </div>
+                                        <div class="image">
+                                            <img src="https://www.redditstatic.com/desktop2x/img/powerups/dotcircle.png" alt=""
+                                                class="img1">
+                                            <img src="https://www.redditstatic.com/desktop2x/img/powerups/powerups-rangers.png" alt=""
+                                                class="img3">
+                                            <img src="https://www.redditstatic.com/desktop2x/img/powerups/linecircle-blue.png" alt=""
+                                                class="img2">
+                                            <h1>Powerups are unlocked in r/WhitePeopleTwitter</h1>
+                                        </div>
+                                        <div class="power">
+                                            <div class="community">
+                                                <P>Community HEROES</P>
+                                            </div>
+                                            <div class="ups">
+                                                <P>Powerups</P>
+                                                <p>57</p>
+                                            </div>
+                                            <div class="ls">
+                                                <div class="line">
+                                                    <svg class="_2R4rnD4fdTnIksADG42tm- _1HqxlPwcLJ3eBF_qCn5-go" viewBox="0 0 74 74"
+                                                        fill="none" xmlns="http://www.w3.org/2000/svg" data-testid="bolt-tier2">
+                                                        <path
+                                                            d="M28.03 73.65h-.08a3.47 3.47 0 01-2.48-1.15l-6.93-7.59a3.47 3.47 0 01-.69-3.63l4.5-10.73H19.6a3.47 3.47 0 01-2.56-1.15L10.1 41.8a3.47 3.47 0 01-.67-3.65L24.86 2.62A3.47 3.47 0 0128.02.54l29.8-.2a3.47 3.47 0 012.55 1.16L67.3 9.1a3.47 3.47 0 01.16 4.5l-7.5 9.54c.27.16.51.36.72.6l6.94 7.58a3.47 3.47 0 01-.12 4.82L30.47 72.66c-.65.64-1.53 1-2.44 1zM25.1 61.9l3.06 3.31L60.3 33.53l-3.64-4.03h-3.47a3.47 3.47 0 01-2.72-5.62l9.75-12.32-3.93-4.28-25.96.17L16.7 38.8l4.4 4.8h6.45a3.47 3.47 0 013.2 4.81L25.1 61.9z"
+                                                            fill="#000"></path>
+                                                        <path
+                                                            d="M34.1 11.6l22.76-7.78 6.99 7.58-17.58 22.21 10.94-7.58 6.98 7.58L27.1 70.18l-6.98-7.58L28.77 47l-10.1.06-7-7.58 22.43-27.9z"
+                                                            fill="#FF7A00"></path>
+                                                        <path
+                                                            d="M27.11 4.01l29.75-.2L39.3 26.04H57.2L20.11 62.6l9.69-23.1-18.12-.01L27.1 4z"
+                                                            fill="#FFD15C"></path>
+                                                        <path
+                                                            d="M35.79 35.25H17.77l11.74-27 18.8-.13-17.53 22.16h16.28l-17 17.75 5.73-12.78z"
+                                                            fill="#FFF5C7"></path>
+                                                        <path
+                                                            d="M54.32 26.03H36.77l20-3.03-2.45 3.03zM26.1 48.32l4.34-10.37-7.97 10.14 3.64.23z"
+                                                            fill="#000"></path>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                            <div class="usrname">
+                                                <div>
+                                                    <div class="img">
+                                                        <img src="https://styles.redditmedia.com/t5_1n5hle/styles/profileIcon_snoo005dec55-02ea-4efb-94dc-0cf00cf6b6ed-headshot.png?width=256&height=256&frame=1&crop=256:256,smart&s=1e578f37f257b723802f1f40e27cadf935830821"
+                                                            alt="">
+                                                    </div>
+                                                    <div class="name">
+                                                        <a href="">oxi-moronical</a>
+                                                    </div>
+                                                    <div class="svg">
+                                                        <svg class="_2R4rnD4fdTnIksADG42tm- _1HqxlPwcLJ3eBF_qCn5-go" viewBox="0 0 74 74"
+                                                            fill="none" xmlns="http://www.w3.org/2000/svg" data-testid="bolt-tier2">
+                                                            <path
+                                                                d="M28.03 73.65h-.08a3.47 3.47 0 01-2.48-1.15l-6.93-7.59a3.47 3.47 0 01-.69-3.63l4.5-10.73H19.6a3.47 3.47 0 01-2.56-1.15L10.1 41.8a3.47 3.47 0 01-.67-3.65L24.86 2.62A3.47 3.47 0 0128.02.54l29.8-.2a3.47 3.47 0 012.55 1.16L67.3 9.1a3.47 3.47 0 01.16 4.5l-7.5 9.54c.27.16.51.36.72.6l6.94 7.58a3.47 3.47 0 01-.12 4.82L30.47 72.66c-.65.64-1.53 1-2.44 1zM25.1 61.9l3.06 3.31L60.3 33.53l-3.64-4.03h-3.47a3.47 3.47 0 01-2.72-5.62l9.75-12.32-3.93-4.28-25.96.17L16.7 38.8l4.4 4.8h6.45a3.47 3.47 0 013.2 4.81L25.1 61.9z"
+                                                                fill="#000"></path>
+                                                            <path
+                                                                d="M34.1 11.6l22.76-7.78 6.99 7.58-17.58 22.21 10.94-7.58 6.98 7.58L27.1 70.18l-6.98-7.58L28.77 47l-10.1.06-7-7.58 22.43-27.9z"
+                                                                fill="#FF7A00"></path>
+                                                            <path
+                                                                d="M27.11 4.01l29.75-.2L39.3 26.04H57.2L20.11 62.6l9.69-23.1-18.12-.01L27.1 4z"
+                                                                fill="#FFD15C"></path>
+                                                            <path
+                                                                d="M35.79 35.25H17.77l11.74-27 18.8-.13-17.53 22.16h16.28l-17 17.75 5.73-12.78z"
+                                                                fill="#FFF5C7"></path>
+                                                            <path
+                                                                d="M54.32 26.03H36.77l20-3.03-2.45 3.03zM26.1 48.32l4.34-10.37-7.97 10.14 3.64.23z"
+                                                                fill="#000"></path>
+                                                        </svg>
+                                                        <p>1</p>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <div class="img">
+                                                        <img src="https://styles.redditmedia.com/t5_1n5hle/styles/profileIcon_snoo005dec55-02ea-4efb-94dc-0cf00cf6b6ed-headshot.png?width=256&height=256&frame=1&crop=256:256,smart&s=1e578f37f257b723802f1f40e27cadf935830821"
+                                                            alt="">
+                                                    </div>
+                                                    <div class="name">
+                                                        <a href="">oxi-moronical</a>
+                                                    </div>
+                                                    <div class="svg">
+                                                        <svg class="_2R4rnD4fdTnIksADG42tm- _1HqxlPwcLJ3eBF_qCn5-go" viewBox="0 0 74 74"
+                                                            fill="none" xmlns="http://www.w3.org/2000/svg" data-testid="bolt-tier2">
+                                                            <path
+                                                                d="M28.03 73.65h-.08a3.47 3.47 0 01-2.48-1.15l-6.93-7.59a3.47 3.47 0 01-.69-3.63l4.5-10.73H19.6a3.47 3.47 0 01-2.56-1.15L10.1 41.8a3.47 3.47 0 01-.67-3.65L24.86 2.62A3.47 3.47 0 0128.02.54l29.8-.2a3.47 3.47 0 012.55 1.16L67.3 9.1a3.47 3.47 0 01.16 4.5l-7.5 9.54c.27.16.51.36.72.6l6.94 7.58a3.47 3.47 0 01-.12 4.82L30.47 72.66c-.65.64-1.53 1-2.44 1zM25.1 61.9l3.06 3.31L60.3 33.53l-3.64-4.03h-3.47a3.47 3.47 0 01-2.72-5.62l9.75-12.32-3.93-4.28-25.96.17L16.7 38.8l4.4 4.8h6.45a3.47 3.47 0 013.2 4.81L25.1 61.9z"
+                                                                fill="#000"></path>
+                                                            <path
+                                                                d="M34.1 11.6l22.76-7.78 6.99 7.58-17.58 22.21 10.94-7.58 6.98 7.58L27.1 70.18l-6.98-7.58L28.77 47l-10.1.06-7-7.58 22.43-27.9z"
+                                                                fill="#FF7A00"></path>
+                                                            <path
+                                                                d="M27.11 4.01l29.75-.2L39.3 26.04H57.2L20.11 62.6l9.69-23.1-18.12-.01L27.1 4z"
+                                                                fill="#FFD15C"></path>
+                                                            <path
+                                                                d="M35.79 35.25H17.77l11.74-27 18.8-.13-17.53 22.16h16.28l-17 17.75 5.73-12.78z"
+                                                                fill="#FFF5C7"></path>
+                                                            <path
+                                                                d="M54.32 26.03H36.77l20-3.03-2.45 3.03zM26.1 48.32l4.34-10.37-7.97 10.14 3.64.23z"
+                                                                fill="#000"></path>
+                                                        </svg>
+                                                        <p>1</p>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <div class="img">
+                                                        <img src="https://styles.redditmedia.com/t5_1n5hle/styles/profileIcon_snoo005dec55-02ea-4efb-94dc-0cf00cf6b6ed-headshot.png?width=256&height=256&frame=1&crop=256:256,smart&s=1e578f37f257b723802f1f40e27cadf935830821"
+                                                            alt="">
+                                                    </div>
+                                                    <div class="name">
+                                                        <a href="">oxi-moronical</a>
+                                                    </div>
+                                                    <div class="svg">
+                                                        <svg class="_2R4rnD4fdTnIksADG42tm- _1HqxlPwcLJ3eBF_qCn5-go" viewBox="0 0 74 74"
+                                                            fill="none" xmlns="http://www.w3.org/2000/svg" data-testid="bolt-tier2">
+                                                            <path
+                                                                d="M28.03 73.65h-.08a3.47 3.47 0 01-2.48-1.15l-6.93-7.59a3.47 3.47 0 01-.69-3.63l4.5-10.73H19.6a3.47 3.47 0 01-2.56-1.15L10.1 41.8a3.47 3.47 0 01-.67-3.65L24.86 2.62A3.47 3.47 0 0128.02.54l29.8-.2a3.47 3.47 0 012.55 1.16L67.3 9.1a3.47 3.47 0 01.16 4.5l-7.5 9.54c.27.16.51.36.72.6l6.94 7.58a3.47 3.47 0 01-.12 4.82L30.47 72.66c-.65.64-1.53 1-2.44 1zM25.1 61.9l3.06 3.31L60.3 33.53l-3.64-4.03h-3.47a3.47 3.47 0 01-2.72-5.62l9.75-12.32-3.93-4.28-25.96.17L16.7 38.8l4.4 4.8h6.45a3.47 3.47 0 013.2 4.81L25.1 61.9z"
+                                                                fill="#000"></path>
+                                                            <path
+                                                                d="M34.1 11.6l22.76-7.78 6.99 7.58-17.58 22.21 10.94-7.58 6.98 7.58L27.1 70.18l-6.98-7.58L28.77 47l-10.1.06-7-7.58 22.43-27.9z"
+                                                                fill="#FF7A00"></path>
+                                                            <path
+                                                                d="M27.11 4.01l29.75-.2L39.3 26.04H57.2L20.11 62.6l9.69-23.1-18.12-.01L27.1 4z"
+                                                                fill="#FFD15C"></path>
+                                                            <path
+                                                                d="M35.79 35.25H17.77l11.74-27 18.8-.13-17.53 22.16h16.28l-17 17.75 5.73-12.78z"
+                                                                fill="#FFF5C7"></path>
+                                                            <path
+                                                                d="M54.32 26.03H36.77l20-3.03-2.45 3.03zM26.1 48.32l4.34-10.37-7.97 10.14 3.64.23z"
+                                                                fill="#000"></path>
+                                                        </svg>
+                                                        <p>1</p>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <div class="img">
+                                                        <img src="https://styles.redditmedia.com/t5_1n5hle/styles/profileIcon_snoo005dec55-02ea-4efb-94dc-0cf00cf6b6ed-headshot.png?width=256&height=256&frame=1&crop=256:256,smart&s=1e578f37f257b723802f1f40e27cadf935830821"
+                                                            alt="">
+                                                    </div>
+                                                    <div class="name">
+                                                        <a href="">oxi-moronical</a>
+                                                    </div>
+                                                    <div class="svg">
+                                                        <svg class="_2R4rnD4fdTnIksADG42tm- _1HqxlPwcLJ3eBF_qCn5-go" viewBox="0 0 74 74"
+                                                            fill="none" xmlns="http://www.w3.org/2000/svg" data-testid="bolt-tier2">
+                                                            <path
+                                                                d="M28.03 73.65h-.08a3.47 3.47 0 01-2.48-1.15l-6.93-7.59a3.47 3.47 0 01-.69-3.63l4.5-10.73H19.6a3.47 3.47 0 01-2.56-1.15L10.1 41.8a3.47 3.47 0 01-.67-3.65L24.86 2.62A3.47 3.47 0 0128.02.54l29.8-.2a3.47 3.47 0 012.55 1.16L67.3 9.1a3.47 3.47 0 01.16 4.5l-7.5 9.54c.27.16.51.36.72.6l6.94 7.58a3.47 3.47 0 01-.12 4.82L30.47 72.66c-.65.64-1.53 1-2.44 1zM25.1 61.9l3.06 3.31L60.3 33.53l-3.64-4.03h-3.47a3.47 3.47 0 01-2.72-5.62l9.75-12.32-3.93-4.28-25.96.17L16.7 38.8l4.4 4.8h6.45a3.47 3.47 0 013.2 4.81L25.1 61.9z"
+                                                                fill="#000"></path>
+                                                            <path
+                                                                d="M34.1 11.6l22.76-7.78 6.99 7.58-17.58 22.21 10.94-7.58 6.98 7.58L27.1 70.18l-6.98-7.58L28.77 47l-10.1.06-7-7.58 22.43-27.9z"
+                                                                fill="#FF7A00"></path>
+                                                            <path
+                                                                d="M27.11 4.01l29.75-.2L39.3 26.04H57.2L20.11 62.6l9.69-23.1-18.12-.01L27.1 4z"
+                                                                fill="#FFD15C"></path>
+                                                            <path
+                                                                d="M35.79 35.25H17.77l11.74-27 18.8-.13-17.53 22.16h16.28l-17 17.75 5.73-12.78z"
+                                                                fill="#FFF5C7"></path>
+                                                            <path
+                                                                d="M54.32 26.03H36.77l20-3.03-2.45 3.03zM26.1 48.32l4.34-10.37-7.97 10.14 3.64.23z"
+                                                                fill="#000"></path>
+                                                        </svg>
+                                                        <p>1</p>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <div class="img">
+                                                        <img src="https://styles.redditmedia.com/t5_1n5hle/styles/profileIcon_snoo005dec55-02ea-4efb-94dc-0cf00cf6b6ed-headshot.png?width=256&height=256&frame=1&crop=256:256,smart&s=1e578f37f257b723802f1f40e27cadf935830821"
+                                                            alt="">
+                                                    </div>
+                                                    <div class="name">
+                                                        <a href="">oxi-moronical</a>
+                                                    </div>
+                                                    <div class="svg">
+                                                        <svg class="_2R4rnD4fdTnIksADG42tm- _1HqxlPwcLJ3eBF_qCn5-go" viewBox="0 0 74 74"
+                                                            fill="none" xmlns="http://www.w3.org/2000/svg" data-testid="bolt-tier2">
+                                                            <path
+                                                                d="M28.03 73.65h-.08a3.47 3.47 0 01-2.48-1.15l-6.93-7.59a3.47 3.47 0 01-.69-3.63l4.5-10.73H19.6a3.47 3.47 0 01-2.56-1.15L10.1 41.8a3.47 3.47 0 01-.67-3.65L24.86 2.62A3.47 3.47 0 0128.02.54l29.8-.2a3.47 3.47 0 012.55 1.16L67.3 9.1a3.47 3.47 0 01.16 4.5l-7.5 9.54c.27.16.51.36.72.6l6.94 7.58a3.47 3.47 0 01-.12 4.82L30.47 72.66c-.65.64-1.53 1-2.44 1zM25.1 61.9l3.06 3.31L60.3 33.53l-3.64-4.03h-3.47a3.47 3.47 0 01-2.72-5.62l9.75-12.32-3.93-4.28-25.96.17L16.7 38.8l4.4 4.8h6.45a3.47 3.47 0 013.2 4.81L25.1 61.9z"
+                                                                fill="#000"></path>
+                                                            <path
+                                                                d="M34.1 11.6l22.76-7.78 6.99 7.58-17.58 22.21 10.94-7.58 6.98 7.58L27.1 70.18l-6.98-7.58L28.77 47l-10.1.06-7-7.58 22.43-27.9z"
+                                                                fill="#FF7A00"></path>
+                                                            <path
+                                                                d="M27.11 4.01l29.75-.2L39.3 26.04H57.2L20.11 62.6l9.69-23.1-18.12-.01L27.1 4z"
+                                                                fill="#FFD15C"></path>
+                                                            <path
+                                                                d="M35.79 35.25H17.77l11.74-27 18.8-.13-17.53 22.16h16.28l-17 17.75 5.73-12.78z"
+                                                                fill="#FFF5C7"></path>
+                                                            <path
+                                                                d="M54.32 26.03H36.77l20-3.03-2.45 3.03zM26.1 48.32l4.34-10.37-7.97 10.14 3.64.23z"
+                                                                fill="#000"></path>
+                                                        </svg>
+                                                        <p>1</p>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <div class="img">
+                                                        <img src="https://styles.redditmedia.com/t5_1n5hle/styles/profileIcon_snoo005dec55-02ea-4efb-94dc-0cf00cf6b6ed-headshot.png?width=256&height=256&frame=1&crop=256:256,smart&s=1e578f37f257b723802f1f40e27cadf935830821"
+                                                            alt="">
+                                                    </div>
+                                                    <div class="name">
+                                                        <a href="">oxi-moronical</a>
+                                                    </div>
+                                                    <div class="svg">
+                                                        <svg class="_2R4rnD4fdTnIksADG42tm- _1HqxlPwcLJ3eBF_qCn5-go" viewBox="0 0 74 74"
+                                                            fill="none" xmlns="http://www.w3.org/2000/svg" data-testid="bolt-tier2">
+                                                            <path
+                                                                d="M28.03 73.65h-.08a3.47 3.47 0 01-2.48-1.15l-6.93-7.59a3.47 3.47 0 01-.69-3.63l4.5-10.73H19.6a3.47 3.47 0 01-2.56-1.15L10.1 41.8a3.47 3.47 0 01-.67-3.65L24.86 2.62A3.47 3.47 0 0128.02.54l29.8-.2a3.47 3.47 0 012.55 1.16L67.3 9.1a3.47 3.47 0 01.16 4.5l-7.5 9.54c.27.16.51.36.72.6l6.94 7.58a3.47 3.47 0 01-.12 4.82L30.47 72.66c-.65.64-1.53 1-2.44 1zM25.1 61.9l3.06 3.31L60.3 33.53l-3.64-4.03h-3.47a3.47 3.47 0 01-2.72-5.62l9.75-12.32-3.93-4.28-25.96.17L16.7 38.8l4.4 4.8h6.45a3.47 3.47 0 013.2 4.81L25.1 61.9z"
+                                                                fill="#000"></path>
+                                                            <path
+                                                                d="M34.1 11.6l22.76-7.78 6.99 7.58-17.58 22.21 10.94-7.58 6.98 7.58L27.1 70.18l-6.98-7.58L28.77 47l-10.1.06-7-7.58 22.43-27.9z"
+                                                                fill="#FF7A00"></path>
+                                                            <path
+                                                                d="M27.11 4.01l29.75-.2L39.3 26.04H57.2L20.11 62.6l9.69-23.1-18.12-.01L27.1 4z"
+                                                                fill="#FFD15C"></path>
+                                                            <path
+                                                                d="M35.79 35.25H17.77l11.74-27 18.8-.13-17.53 22.16h16.28l-17 17.75 5.73-12.78z"
+                                                                fill="#FFF5C7"></path>
+                                                            <path
+                                                                d="M54.32 26.03H36.77l20-3.03-2.45 3.03zM26.1 48.32l4.34-10.37-7.97 10.14 3.64.23z"
+                                                                fill="#000"></path>
+                                                        </svg>
+                                                        <p>1</p>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <div class="img">
+                                                        <img src="https://styles.redditmedia.com/t5_1n5hle/styles/profileIcon_snoo005dec55-02ea-4efb-94dc-0cf00cf6b6ed-headshot.png?width=256&height=256&frame=1&crop=256:256,smart&s=1e578f37f257b723802f1f40e27cadf935830821"
+                                                            alt="">
+                                                    </div>
+                                                    <div class="name">
+                                                        <a href="">oxi-moronical</a>
+                                                    </div>
+                                                    <div class="svg">
+                                                        <svg class="_2R4rnD4fdTnIksADG42tm- _1HqxlPwcLJ3eBF_qCn5-go" viewBox="0 0 74 74"
+                                                            fill="none" xmlns="http://www.w3.org/2000/svg" data-testid="bolt-tier2">
+                                                            <path
+                                                                d="M28.03 73.65h-.08a3.47 3.47 0 01-2.48-1.15l-6.93-7.59a3.47 3.47 0 01-.69-3.63l4.5-10.73H19.6a3.47 3.47 0 01-2.56-1.15L10.1 41.8a3.47 3.47 0 01-.67-3.65L24.86 2.62A3.47 3.47 0 0128.02.54l29.8-.2a3.47 3.47 0 012.55 1.16L67.3 9.1a3.47 3.47 0 01.16 4.5l-7.5 9.54c.27.16.51.36.72.6l6.94 7.58a3.47 3.47 0 01-.12 4.82L30.47 72.66c-.65.64-1.53 1-2.44 1zM25.1 61.9l3.06 3.31L60.3 33.53l-3.64-4.03h-3.47a3.47 3.47 0 01-2.72-5.62l9.75-12.32-3.93-4.28-25.96.17L16.7 38.8l4.4 4.8h6.45a3.47 3.47 0 013.2 4.81L25.1 61.9z"
+                                                                fill="#000"></path>
+                                                            <path
+                                                                d="M34.1 11.6l22.76-7.78 6.99 7.58-17.58 22.21 10.94-7.58 6.98 7.58L27.1 70.18l-6.98-7.58L28.77 47l-10.1.06-7-7.58 22.43-27.9z"
+                                                                fill="#FF7A00"></path>
+                                                            <path
+                                                                d="M27.11 4.01l29.75-.2L39.3 26.04H57.2L20.11 62.6l9.69-23.1-18.12-.01L27.1 4z"
+                                                                fill="#FFD15C"></path>
+                                                            <path
+                                                                d="M35.79 35.25H17.77l11.74-27 18.8-.13-17.53 22.16h16.28l-17 17.75 5.73-12.78z"
+                                                                fill="#FFF5C7"></path>
+                                                            <path
+                                                                d="M54.32 26.03H36.77l20-3.03-2.45 3.03zM26.1 48.32l4.34-10.37-7.97 10.14 3.64.23z"
+                                                                fill="#000"></path>
+                                                        </svg>
+                                                        <p>1</p>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <div class="img">
+                                                        <img src="https://styles.redditmedia.com/t5_1n5hle/styles/profileIcon_snoo005dec55-02ea-4efb-94dc-0cf00cf6b6ed-headshot.png?width=256&height=256&frame=1&crop=256:256,smart&s=1e578f37f257b723802f1f40e27cadf935830821"
+                                                            alt="">
+                                                    </div>
+                                                    <div class="name">
+                                                        <a href="">oxi-moronical</a>
+                                                    </div>
+                                                    <div class="svg">
+                                                        <svg class="_2R4rnD4fdTnIksADG42tm- _1HqxlPwcLJ3eBF_qCn5-go" viewBox="0 0 74 74"
+                                                            fill="none" xmlns="http://www.w3.org/2000/svg" data-testid="bolt-tier2">
+                                                            <path
+                                                                d="M28.03 73.65h-.08a3.47 3.47 0 01-2.48-1.15l-6.93-7.59a3.47 3.47 0 01-.69-3.63l4.5-10.73H19.6a3.47 3.47 0 01-2.56-1.15L10.1 41.8a3.47 3.47 0 01-.67-3.65L24.86 2.62A3.47 3.47 0 0128.02.54l29.8-.2a3.47 3.47 0 012.55 1.16L67.3 9.1a3.47 3.47 0 01.16 4.5l-7.5 9.54c.27.16.51.36.72.6l6.94 7.58a3.47 3.47 0 01-.12 4.82L30.47 72.66c-.65.64-1.53 1-2.44 1zM25.1 61.9l3.06 3.31L60.3 33.53l-3.64-4.03h-3.47a3.47 3.47 0 01-2.72-5.62l9.75-12.32-3.93-4.28-25.96.17L16.7 38.8l4.4 4.8h6.45a3.47 3.47 0 013.2 4.81L25.1 61.9z"
+                                                                fill="#000"></path>
+                                                            <path
+                                                                d="M34.1 11.6l22.76-7.78 6.99 7.58-17.58 22.21 10.94-7.58 6.98 7.58L27.1 70.18l-6.98-7.58L28.77 47l-10.1.06-7-7.58 22.43-27.9z"
+                                                                fill="#FF7A00"></path>
+                                                            <path
+                                                                d="M27.11 4.01l29.75-.2L39.3 26.04H57.2L20.11 62.6l9.69-23.1-18.12-.01L27.1 4z"
+                                                                fill="#FFD15C"></path>
+                                                            <path
+                                                                d="M35.79 35.25H17.77l11.74-27 18.8-.13-17.53 22.16h16.28l-17 17.75 5.73-12.78z"
+                                                                fill="#FFF5C7"></path>
+                                                            <path
+                                                                d="M54.32 26.03H36.77l20-3.03-2.45 3.03zM26.1 48.32l4.34-10.37-7.97 10.14 3.64.23z"
+                                                                fill="#000"></path>
+                                                        </svg>
+                                                        <p>1</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="button">
+                                            <button id="hrBtn">See All Heroes</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="usermore mt-3">
+                            <div class="contain">
+                                <div class="row">
+                                    <div class="support">
+                                        <div>
+                                            <a href="#">
+                                                <p>Help</p>
+                                            </a>
+                                            <a href="#">
+                                                <p>Reddit Coins</p>
+                                            </a>
+                                            <a href="#">
+                                                <p>Reddit Premium</p>
+                                            </a>
+                                            <a href="#">
+                                                <p>Communities</p>
+                                            </a>
+                                            <a href="#">
+                                                <p>Rereddit</p>
+                                            </a>
+                                            <a href="#">
+                                                <p>Topics</p>
+                                            </a>
+                                        </div>
+                                        <div>
+                                            <a href="#">
+                                                <P>About</P>
+                                            </a><a href="#">
+                                                <P>Careers</P>
+                                            </a><a href="#">
+                                                <P>Press</P>
+                                            </a><a href="#">
+                                                <P>Advertise</P>
+                                            </a><a href="#">
+                                                <P>Blog</P>
+                                            </a><a href="#">
+                                                <P>Terms</P>
+                                            </a><a href="#">
+                                                <P>Content Policy</P>
+                                            </a><a href="#">
+                                                <P>Privacy Policy</P>
+                                            </a><a href="#">
+                                                <P>Mod Policy</P>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="country">
+                                        <div><a href="#">
+                                                <p>English</p>
+                                            </a><a href="#">
+                                                <p>Français</p>
+                                            </a><a href="#">
+                                                <p>Italiano</p>
+                                            </a></div>
+                                        <div>
+                                            <a href="#">
+                                                <p>Deutsch</p>
+                                            </a><a href="#">
+                                                <p>Espanol</p>
+                                            </a><a href="#">
+                                                <p>Portugues</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="year">
+                                        <p>Reddit Inc © 2022. All rights reserved</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="myModal" class="modal">
+            <div class="modal-content">
+                <div class="conten">
+                    <div class="image">
+                        <img src="../image/Screenshot 2022-07-18 164325.png" alt="">
+                    </div>
+                    <div class="form">
+                        <div class="title">
+                            <strong>Sign up to join this community.</strong>
+                            <p class="mt-1">By continuing, you are setting up a Reddit account and agree to our <a
+                                    href="">User
+                                    Agreement</a> and <a href="">Privacy Policy</a>.</p>
+                        </div>
+                        <div class="sosial mt-5">
+                            <div class="google">
+                                <div>
+                                    <a href=""><img src="../image/s1AjSxph_400x400.jpg" alt=""></a>
+                                </div>
+                                <div>
+                                    <a href="">Continue with Google</a>
+                                </div>
+                            </div>
+                            <div class="iphone mt-2">
+                                <div>
+                                    <a href=""><img src="../image/apple-logo-E3DBF3AE34-seeklogo.com.png" alt=""></a>
+                                </div>
+                                <div>
+                                    <a href="">Continue with Apple</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="or mt-5">
+                            <div class="line"></div>
+                            <div>
+                                <p>OR</p>
+                            </div>
+                            <div class="line"></div>
+                        </div>
+                        <div class="username">
+                            <div class="input">
+                                <input type="text" placeholder="User Name" class="inp">
+                            </div>
+                        </div>
+                        <div class="Password mt-3">
+                            <div class="input">
+                                <input type="password" placeholder="EMAIL" class="inp">
+                            </div>
+                        </div>
+                        <div class="continue mt-3">
+                            <button class="button" type="submit"><strong>Continue</strong></button>
+                        </div>
+                        <div class="login mt-4">
+                            <p>Already a redditor? <a href="../html/Register.html"> <strong>Register</strong></a></p>
+                        </div>
+                    </div>
+                    <div class="clos">
+                        <span class="close">&times;</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="mrDetals" class="Detals">
+            <div class="container">
+                <div class="row">
+                    <div class="Content col-lg-12 col-12 col-md-12 col-sm-12">
+                        <nav>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-2 col-sm-2 col-md-2 col-2 icon">
+                                        <div class="line"></div>
+                                        <div><a href="#" class="i"><i class="fa-solid fa-circle-up"></i></div>
+                                        <div><a href="#">10</a></div>
+                                        <div><a href="#" class="i"><i class="fa-solid fa-circle-down"></i></a></div>
+                                        <div class="line"></div>
+                                    </div>
+                                    <div class="col-lg-8 col-sm-8 col-md-8 col-8">
+                                        <p> US Rep. Omar arrested in Washington, DC, amid protest</p>
+                                    </div>
+                                    <div class="col-lg-2 col-sm-2 col-md-2 col-2 ext">
+                                        <p class="delatsCloses"><i class="fa-solid fa-xmark"></i> Close</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="Contentmain col-lg-12 col-12 col-md-12 col-sm-12">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-8 col-md-8 col-sm-8 col-8">
+                                    <div class="main mt-4">
+                                        <div class="title mt-2">
+                                            <div class="icon">
+                                                <div><a href="#" class="i"><i class="fa-solid fa-circle-up"></i></div>
+                                                <div><a href="#">10</a></div>
+                                                <div><a href="#" class="i"><i class="fa-solid fa-circle-down"></i></a>
+                                                </div>
+                                            </div>
+                                            <div class="image">
+                                                <div class="img">
+                                                    <div><img
+                                                            src="https://styles.redditmedia.com/t5_2qh87/styles/communityIcon_ub69d1lpjlf51.png"
+                                                            alt=""></div>
+                                                    <div><a href="#"><strong class="r">r/space</strong></a></div>
+                                                </div>
+                                                <div class="Title" id="mainBtn">
+                                                    <a href="#"><strong>Something behind the moon. Astronomer Jan Koet
+                                                            captured
+                                                            this
+                                                            video.</strong></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="post" id="mainBtn">
+                                            <div>
+                                                <video width="650px" height="400px"
+                                                    src="https://preview.redd.it/9vxfblrivmb91.gif?width=600&format=mp4&s=262a685e30c7cd687b063047f81a6bbc5b806cb2"
+                                                    controls>
+                                                </video>
+                                                <!-- <img src="./image/Rtu2Mw0L-mx7AeYtHKkbAh75jQbgzy_Hk2UIlLeZFSs.png" alt=""> -->
+                                            </div>
+                                        </div>
+                                        <div class="comment">
+                                            <div class="com">
+                                                <div><a href="#"><i class="fa-regular fa-message"></i></a></div>
+                                                <div><a href="#">0</a></div>
+                                                <div><a href="#">Comments</a></div>
+                                            </div>
+                                            <div class="shar">
+                                                <div class="sidenav">
+                                                    <button class="dropdown-btn">
+                                                        <div><a><i class="fa-solid fa-share"></i></a></div>
+                                                        <div><a>Shared</a></div>
+                                                    </button>
+                                                    <div class="dropdown-container">
+                                                        <a href="#" class="a"><i class="fa-regular fa-copy"></i> Copy
+                                                            Link</a>
+                                                        <a href="#" class="a"><i
+                                                                class="fa-solid fa-arrows-left-right-to-line"></i>
+                                                            Embed</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="sav">
+                                                <div><a href="#"><i class="fa-regular fa-bookmark"></i></a></div>
+                                                <div><a href="#">Save</a></div>
+                                            </div>
+                                            <div class="addition">
+                                                <div class="sidenav">
+                                                    <button class="dropdown-btn">
+                                                        <a>......</a>
+                                                    </button>
+                                                    <div class="dropdown-container">
+                                                        <a class="a"><i class="fa-regular fa-eye-slash"></i> Hide</a>
+                                                        <a class="a"><i class="fa-regular fa-flag"></i> Report</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="cominp">
+                                            <input type="text" placeholder="What are you thoughts?">
+                                            <button type="submit">comment</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-4 col-4">
+                                    <div class="name">
+                                        <div class="image">
+                                        </div>
+                                        <div class="user">
+                                            <div class="img">
+                                                <a href="">
+                                                    <img src="https://styles.redditmedia.com/t5_2qhsa/styles/communityIcon_5v3bepmshpg81.png?width=256&s=4d4c7a59b5a0286f3e237b60eb6e0dc8948ede74"
+                                                        alt="">
+                                                </a>
+                                            </div>
+                                            <div class="username mt-3">
+                                                <a href="">r/interestingasfuck</a>
+                                            </div>
+                                        </div>
+                                        <div class="follow">
+                                            <div class="namemore">
+                                                <p>Welcome to r/Funny, Reddit's largest humour depository.</p>
+                                            </div>
+                                            <div class="member">
+                                                <div>
+                                                    <p>5m</p>
+                                                    <p class="onm">Members</p>
+                                                </div>
+                                                <div>
+                                                    <p>3k</p>
+                                                    <p class="onm">Online</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="age">
+                                            <div><i class="fa-solid fa-cake-candles"></i></div>
+                                            <div>
+                                                <p>Created Feb</p>
+                                            </div>
+                                            <div>
+                                                <p>25, 2016</p>
+                                            </div>
+                                        </div>
+                                        <div class="joinBtn">
+                                            <button><strong>join</strong></button>
+                                        </div>
+                                    </div>
+                                    <div class="about mt-3">
+                                        <div class="allabout">
+                                            <div>
+                                                <a href="">
+                                                    <p>Help</p>
+                                                </a>
+                                                <a href="">
+                                                    <p>Reddit Coins</p>
+                                                </a>
+                                                <a href="">
+                                                    <p>Reddit Premium</p>
+                                                </a>
+                                            </div>
+                                            <div>
+                                                <a href="">
+                                                    <p>About</p>
+                                                </a>
+                                                <a href="">
+                                                    <p>Careers</p>
+                                                </a>
+                                                <a href="">
+                                                    <p>Press</p>
+                                                </a>
+                                                <a href="">
+                                                    <p>Advertise</p>
+                                                </a>
+                                                <a href="">
+                                                    <p>Blog</p>
+                                                </a>
+                                                <a href="">
+                                                    <p>Terms</p>
+                                                </a>
+                                                <a href="">
+                                                    <p>Content Policy</p>
+                                                </a>
+                                                <a href="">
+                                                    <p>Privacy Policy</p>
+                                                </a>
+                                                <a href="">
+                                                    <p>ModPolicy</p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="px-2">
+                                            <p>Reddit Inc © 2022. All rights reserved</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="hrModal" class="heroes">
+            <div class="modal-content">
+                <div class="title">
+                    <div class="caption">
+                        <h1>Community Heroes</h1>
+                        <p>r/WhiterPeapleTwitter</p>
+                    </div>
+                    <div class="icon">
+                        <span class="closes"><i class="fa-solid fa-xmark"></i></span>
+                    </div>
+                </div>
+                <div class="usermain">
+                    <div>
+                        <div class="mt-4">
+                            <p>1</p>
+                        </div>
+                        <div class="img">
+                            <img src="https://styles.redditmedia.com/t5_1n5hle/styles/profileIcon_snoo005dec55-02ea-4efb-94dc-0cf00cf6b6ed-headshot.png?width=256&height=256&frame=1&crop=256:256,smart&s=1e578f37f257b723802f1f40e27cadf935830821"
+                                alt="">
+                        </div>
+                        <div class="name">
+                            <a href="">oxi-moronical</a>
+                        </div>
+                        <div class="svg">
+                            <svg class="_2R4rnD4fdTnIksADG42tm- _1HqxlPwcLJ3eBF_qCn5-go" viewBox="0 0 74 74" fill="none"
+                                xmlns="http://www.w3.org/2000/svg" data-testid="bolt-tier2">
+                                <path
+                                    d="M28.03 73.65h-.08a3.47 3.47 0 01-2.48-1.15l-6.93-7.59a3.47 3.47 0 01-.69-3.63l4.5-10.73H19.6a3.47 3.47 0 01-2.56-1.15L10.1 41.8a3.47 3.47 0 01-.67-3.65L24.86 2.62A3.47 3.47 0 0128.02.54l29.8-.2a3.47 3.47 0 012.55 1.16L67.3 9.1a3.47 3.47 0 01.16 4.5l-7.5 9.54c.27.16.51.36.72.6l6.94 7.58a3.47 3.47 0 01-.12 4.82L30.47 72.66c-.65.64-1.53 1-2.44 1zM25.1 61.9l3.06 3.31L60.3 33.53l-3.64-4.03h-3.47a3.47 3.47 0 01-2.72-5.62l9.75-12.32-3.93-4.28-25.96.17L16.7 38.8l4.4 4.8h6.45a3.47 3.47 0 013.2 4.81L25.1 61.9z"
+                                    fill="#000"></path>
+                                <path
+                                    d="M34.1 11.6l22.76-7.78 6.99 7.58-17.58 22.21 10.94-7.58 6.98 7.58L27.1 70.18l-6.98-7.58L28.77 47l-10.1.06-7-7.58 22.43-27.9z"
+                                    fill="#FF7A00"></path>
+                                <path d="M27.11 4.01l29.75-.2L39.3 26.04H57.2L20.11 62.6l9.69-23.1-18.12-.01L27.1 4z"
+                                    fill="#FFD15C"></path>
+                                <path d="M35.79 35.25H17.77l11.74-27 18.8-.13-17.53 22.16h16.28l-17 17.75 5.73-12.78z"
+                                    fill="#FFF5C7"></path>
+                                <path
+                                    d="M54.32 26.03H36.77l20-3.03-2.45 3.03zM26.1 48.32l4.34-10.37-7.97 10.14 3.64.23z"
+                                    fill="#000"></path>
+                            </svg>
+                            <p class="mt-3">1</p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div>
+                        <div class="mt-4">
+                            <p>1</p>
+                        </div>
+                        <div class="img">
+                            <img src="https://styles.redditmedia.com/t5_1n5hle/styles/profileIcon_snoo005dec55-02ea-4efb-94dc-0cf00cf6b6ed-headshot.png?width=256&height=256&frame=1&crop=256:256,smart&s=1e578f37f257b723802f1f40e27cadf935830821"
+                                alt="">
+                        </div>
+                        <div class="name">
+                            <a href="">oxi-moronical</a>
+                        </div>
+                        <div class="svg">
+                            <svg class="_2R4rnD4fdTnIksADG42tm- _1HqxlPwcLJ3eBF_qCn5-go" viewBox="0 0 74 74" fill="none"
+                                xmlns="http://www.w3.org/2000/svg" data-testid="bolt-tier2">
+                                <path
+                                    d="M28.03 73.65h-.08a3.47 3.47 0 01-2.48-1.15l-6.93-7.59a3.47 3.47 0 01-.69-3.63l4.5-10.73H19.6a3.47 3.47 0 01-2.56-1.15L10.1 41.8a3.47 3.47 0 01-.67-3.65L24.86 2.62A3.47 3.47 0 0128.02.54l29.8-.2a3.47 3.47 0 012.55 1.16L67.3 9.1a3.47 3.47 0 01.16 4.5l-7.5 9.54c.27.16.51.36.72.6l6.94 7.58a3.47 3.47 0 01-.12 4.82L30.47 72.66c-.65.64-1.53 1-2.44 1zM25.1 61.9l3.06 3.31L60.3 33.53l-3.64-4.03h-3.47a3.47 3.47 0 01-2.72-5.62l9.75-12.32-3.93-4.28-25.96.17L16.7 38.8l4.4 4.8h6.45a3.47 3.47 0 013.2 4.81L25.1 61.9z"
+                                    fill="#000"></path>
+                                <path
+                                    d="M34.1 11.6l22.76-7.78 6.99 7.58-17.58 22.21 10.94-7.58 6.98 7.58L27.1 70.18l-6.98-7.58L28.77 47l-10.1.06-7-7.58 22.43-27.9z"
+                                    fill="#FF7A00"></path>
+                                <path d="M27.11 4.01l29.75-.2L39.3 26.04H57.2L20.11 62.6l9.69-23.1-18.12-.01L27.1 4z"
+                                    fill="#FFD15C"></path>
+                                <path d="M35.79 35.25H17.77l11.74-27 18.8-.13-17.53 22.16h16.28l-17 17.75 5.73-12.78z"
+                                    fill="#FFF5C7"></path>
+                                <path
+                                    d="M54.32 26.03H36.77l20-3.03-2.45 3.03zM26.1 48.32l4.34-10.37-7.97 10.14 3.64.23z"
+                                    fill="#000"></path>
+                            </svg>
+                            <p class="mt-3">1</p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div>
+                        <div class="mt-4">
+                            <p>1</p>
+                        </div>
+                        <div class="img">
+                            <img src="https://styles.redditmedia.com/t5_1n5hle/styles/profileIcon_snoo005dec55-02ea-4efb-94dc-0cf00cf6b6ed-headshot.png?width=256&height=256&frame=1&crop=256:256,smart&s=1e578f37f257b723802f1f40e27cadf935830821"
+                                alt="">
+                        </div>
+                        <div class="name">
+                            <a href="">oxi-moronical</a>
+                        </div>
+                        <div class="svg">
+                            <svg class="_2R4rnD4fdTnIksADG42tm- _1HqxlPwcLJ3eBF_qCn5-go" viewBox="0 0 74 74" fill="none"
+                                xmlns="http://www.w3.org/2000/svg" data-testid="bolt-tier2">
+                                <path
+                                    d="M28.03 73.65h-.08a3.47 3.47 0 01-2.48-1.15l-6.93-7.59a3.47 3.47 0 01-.69-3.63l4.5-10.73H19.6a3.47 3.47 0 01-2.56-1.15L10.1 41.8a3.47 3.47 0 01-.67-3.65L24.86 2.62A3.47 3.47 0 0128.02.54l29.8-.2a3.47 3.47 0 012.55 1.16L67.3 9.1a3.47 3.47 0 01.16 4.5l-7.5 9.54c.27.16.51.36.72.6l6.94 7.58a3.47 3.47 0 01-.12 4.82L30.47 72.66c-.65.64-1.53 1-2.44 1zM25.1 61.9l3.06 3.31L60.3 33.53l-3.64-4.03h-3.47a3.47 3.47 0 01-2.72-5.62l9.75-12.32-3.93-4.28-25.96.17L16.7 38.8l4.4 4.8h6.45a3.47 3.47 0 013.2 4.81L25.1 61.9z"
+                                    fill="#000"></path>
+                                <path
+                                    d="M34.1 11.6l22.76-7.78 6.99 7.58-17.58 22.21 10.94-7.58 6.98 7.58L27.1 70.18l-6.98-7.58L28.77 47l-10.1.06-7-7.58 22.43-27.9z"
+                                    fill="#FF7A00"></path>
+                                <path d="M27.11 4.01l29.75-.2L39.3 26.04H57.2L20.11 62.6l9.69-23.1-18.12-.01L27.1 4z"
+                                    fill="#FFD15C"></path>
+                                <path d="M35.79 35.25H17.77l11.74-27 18.8-.13-17.53 22.16h16.28l-17 17.75 5.73-12.78z"
+                                    fill="#FFF5C7"></path>
+                                <path
+                                    d="M54.32 26.03H36.77l20-3.03-2.45 3.03zM26.1 48.32l4.34-10.37-7.97 10.14 3.64.23z"
+                                    fill="#000"></path>
+                            </svg>
+                            <p class="mt-3">1</p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div>
+                        <div class="mt-4">
+                            <p>1</p>
+                        </div>
+                        <div class="img">
+                            <img src="https://styles.redditmedia.com/t5_1n5hle/styles/profileIcon_snoo005dec55-02ea-4efb-94dc-0cf00cf6b6ed-headshot.png?width=256&height=256&frame=1&crop=256:256,smart&s=1e578f37f257b723802f1f40e27cadf935830821"
+                                alt="">
+                        </div>
+                        <div class="name">
+                            <a href="">oxi-moronical</a>
+                        </div>
+                        <div class="svg">
+                            <svg class="_2R4rnD4fdTnIksADG42tm- _1HqxlPwcLJ3eBF_qCn5-go" viewBox="0 0 74 74" fill="none"
+                                xmlns="http://www.w3.org/2000/svg" data-testid="bolt-tier2">
+                                <path
+                                    d="M28.03 73.65h-.08a3.47 3.47 0 01-2.48-1.15l-6.93-7.59a3.47 3.47 0 01-.69-3.63l4.5-10.73H19.6a3.47 3.47 0 01-2.56-1.15L10.1 41.8a3.47 3.47 0 01-.67-3.65L24.86 2.62A3.47 3.47 0 0128.02.54l29.8-.2a3.47 3.47 0 012.55 1.16L67.3 9.1a3.47 3.47 0 01.16 4.5l-7.5 9.54c.27.16.51.36.72.6l6.94 7.58a3.47 3.47 0 01-.12 4.82L30.47 72.66c-.65.64-1.53 1-2.44 1zM25.1 61.9l3.06 3.31L60.3 33.53l-3.64-4.03h-3.47a3.47 3.47 0 01-2.72-5.62l9.75-12.32-3.93-4.28-25.96.17L16.7 38.8l4.4 4.8h6.45a3.47 3.47 0 013.2 4.81L25.1 61.9z"
+                                    fill="#000"></path>
+                                <path
+                                    d="M34.1 11.6l22.76-7.78 6.99 7.58-17.58 22.21 10.94-7.58 6.98 7.58L27.1 70.18l-6.98-7.58L28.77 47l-10.1.06-7-7.58 22.43-27.9z"
+                                    fill="#FF7A00"></path>
+                                <path d="M27.11 4.01l29.75-.2L39.3 26.04H57.2L20.11 62.6l9.69-23.1-18.12-.01L27.1 4z"
+                                    fill="#FFD15C"></path>
+                                <path d="M35.79 35.25H17.77l11.74-27 18.8-.13-17.53 22.16h16.28l-17 17.75 5.73-12.78z"
+                                    fill="#FFF5C7"></path>
+                                <path
+                                    d="M54.32 26.03H36.77l20-3.03-2.45 3.03zM26.1 48.32l4.34-10.37-7.97 10.14 3.64.23z"
+                                    fill="#000"></path>
+                            </svg>
+                            <p class="mt-3">1</p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div>
+                        <div class="mt-4">
+                            <p>1</p>
+                        </div>
+                        <div class="img">
+                            <img src="https://styles.redditmedia.com/t5_1n5hle/styles/profileIcon_snoo005dec55-02ea-4efb-94dc-0cf00cf6b6ed-headshot.png?width=256&height=256&frame=1&crop=256:256,smart&s=1e578f37f257b723802f1f40e27cadf935830821"
+                                alt="">
+                        </div>
+                        <div class="name">
+                            <a href="">oxi-moronical</a>
+                        </div>
+                        <div class="svg">
+                            <svg class="_2R4rnD4fdTnIksADG42tm- _1HqxlPwcLJ3eBF_qCn5-go" viewBox="0 0 74 74" fill="none"
+                                xmlns="http://www.w3.org/2000/svg" data-testid="bolt-tier2">
+                                <path
+                                    d="M28.03 73.65h-.08a3.47 3.47 0 01-2.48-1.15l-6.93-7.59a3.47 3.47 0 01-.69-3.63l4.5-10.73H19.6a3.47 3.47 0 01-2.56-1.15L10.1 41.8a3.47 3.47 0 01-.67-3.65L24.86 2.62A3.47 3.47 0 0128.02.54l29.8-.2a3.47 3.47 0 012.55 1.16L67.3 9.1a3.47 3.47 0 01.16 4.5l-7.5 9.54c.27.16.51.36.72.6l6.94 7.58a3.47 3.47 0 01-.12 4.82L30.47 72.66c-.65.64-1.53 1-2.44 1zM25.1 61.9l3.06 3.31L60.3 33.53l-3.64-4.03h-3.47a3.47 3.47 0 01-2.72-5.62l9.75-12.32-3.93-4.28-25.96.17L16.7 38.8l4.4 4.8h6.45a3.47 3.47 0 013.2 4.81L25.1 61.9z"
+                                    fill="#000"></path>
+                                <path
+                                    d="M34.1 11.6l22.76-7.78 6.99 7.58-17.58 22.21 10.94-7.58 6.98 7.58L27.1 70.18l-6.98-7.58L28.77 47l-10.1.06-7-7.58 22.43-27.9z"
+                                    fill="#FF7A00"></path>
+                                <path d="M27.11 4.01l29.75-.2L39.3 26.04H57.2L20.11 62.6l9.69-23.1-18.12-.01L27.1 4z"
+                                    fill="#FFD15C"></path>
+                                <path d="M35.79 35.25H17.77l11.74-27 18.8-.13-17.53 22.16h16.28l-17 17.75 5.73-12.78z"
+                                    fill="#FFF5C7"></path>
+                                <path
+                                    d="M54.32 26.03H36.77l20-3.03-2.45 3.03zM26.1 48.32l4.34-10.37-7.97 10.14 3.64.23z"
+                                    fill="#000"></path>
+                            </svg>
+                            <p class="mt-3">1</p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div>
+                        <div class="mt-4">
+                            <p>1</p>
+                        </div>
+                        <div class="img">
+                            <img src="https://styles.redditmedia.com/t5_1n5hle/styles/profileIcon_snoo005dec55-02ea-4efb-94dc-0cf00cf6b6ed-headshot.png?width=256&height=256&frame=1&crop=256:256,smart&s=1e578f37f257b723802f1f40e27cadf935830821"
+                                alt="">
+                        </div>
+                        <div class="name">
+                            <a href="">oxi-moronical</a>
+                        </div>
+                        <div class="svg">
+                            <svg class="_2R4rnD4fdTnIksADG42tm- _1HqxlPwcLJ3eBF_qCn5-go" viewBox="0 0 74 74" fill="none"
+                                xmlns="http://www.w3.org/2000/svg" data-testid="bolt-tier2">
+                                <path
+                                    d="M28.03 73.65h-.08a3.47 3.47 0 01-2.48-1.15l-6.93-7.59a3.47 3.47 0 01-.69-3.63l4.5-10.73H19.6a3.47 3.47 0 01-2.56-1.15L10.1 41.8a3.47 3.47 0 01-.67-3.65L24.86 2.62A3.47 3.47 0 0128.02.54l29.8-.2a3.47 3.47 0 012.55 1.16L67.3 9.1a3.47 3.47 0 01.16 4.5l-7.5 9.54c.27.16.51.36.72.6l6.94 7.58a3.47 3.47 0 01-.12 4.82L30.47 72.66c-.65.64-1.53 1-2.44 1zM25.1 61.9l3.06 3.31L60.3 33.53l-3.64-4.03h-3.47a3.47 3.47 0 01-2.72-5.62l9.75-12.32-3.93-4.28-25.96.17L16.7 38.8l4.4 4.8h6.45a3.47 3.47 0 013.2 4.81L25.1 61.9z"
+                                    fill="#000"></path>
+                                <path
+                                    d="M34.1 11.6l22.76-7.78 6.99 7.58-17.58 22.21 10.94-7.58 6.98 7.58L27.1 70.18l-6.98-7.58L28.77 47l-10.1.06-7-7.58 22.43-27.9z"
+                                    fill="#FF7A00"></path>
+                                <path d="M27.11 4.01l29.75-.2L39.3 26.04H57.2L20.11 62.6l9.69-23.1-18.12-.01L27.1 4z"
+                                    fill="#FFD15C"></path>
+                                <path d="M35.79 35.25H17.77l11.74-27 18.8-.13-17.53 22.16h16.28l-17 17.75 5.73-12.78z"
+                                    fill="#FFF5C7"></path>
+                                <path
+                                    d="M54.32 26.03H36.77l20-3.03-2.45 3.03zM26.1 48.32l4.34-10.37-7.97 10.14 3.64.23z"
+                                    fill="#000"></path>
+                            </svg>
+                            <p class="mt-3">1</p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div>
+                        <div class="mt-4">
+                            <p>1</p>
+                        </div>
+                        <div class="img">
+                            <img src="https://styles.redditmedia.com/t5_1n5hle/styles/profileIcon_snoo005dec55-02ea-4efb-94dc-0cf00cf6b6ed-headshot.png?width=256&height=256&frame=1&crop=256:256,smart&s=1e578f37f257b723802f1f40e27cadf935830821"
+                                alt="">
+                        </div>
+                        <div class="name">
+                            <a href="">oxi-moronical</a>
+                        </div>
+                        <div class="svg">
+                            <svg class="_2R4rnD4fdTnIksADG42tm- _1HqxlPwcLJ3eBF_qCn5-go" viewBox="0 0 74 74" fill="none"
+                                xmlns="http://www.w3.org/2000/svg" data-testid="bolt-tier2">
+                                <path
+                                    d="M28.03 73.65h-.08a3.47 3.47 0 01-2.48-1.15l-6.93-7.59a3.47 3.47 0 01-.69-3.63l4.5-10.73H19.6a3.47 3.47 0 01-2.56-1.15L10.1 41.8a3.47 3.47 0 01-.67-3.65L24.86 2.62A3.47 3.47 0 0128.02.54l29.8-.2a3.47 3.47 0 012.55 1.16L67.3 9.1a3.47 3.47 0 01.16 4.5l-7.5 9.54c.27.16.51.36.72.6l6.94 7.58a3.47 3.47 0 01-.12 4.82L30.47 72.66c-.65.64-1.53 1-2.44 1zM25.1 61.9l3.06 3.31L60.3 33.53l-3.64-4.03h-3.47a3.47 3.47 0 01-2.72-5.62l9.75-12.32-3.93-4.28-25.96.17L16.7 38.8l4.4 4.8h6.45a3.47 3.47 0 013.2 4.81L25.1 61.9z"
+                                    fill="#000"></path>
+                                <path
+                                    d="M34.1 11.6l22.76-7.78 6.99 7.58-17.58 22.21 10.94-7.58 6.98 7.58L27.1 70.18l-6.98-7.58L28.77 47l-10.1.06-7-7.58 22.43-27.9z"
+                                    fill="#FF7A00"></path>
+                                <path d="M27.11 4.01l29.75-.2L39.3 26.04H57.2L20.11 62.6l9.69-23.1-18.12-.01L27.1 4z"
+                                    fill="#FFD15C"></path>
+                                <path d="M35.79 35.25H17.77l11.74-27 18.8-.13-17.53 22.16h16.28l-17 17.75 5.73-12.78z"
+                                    fill="#FFF5C7"></path>
+                                <path
+                                    d="M54.32 26.03H36.77l20-3.03-2.45 3.03zM26.1 48.32l4.34-10.37-7.97 10.14 3.64.23z"
+                                    fill="#000"></path>
+                            </svg>
+                            <p class="mt-3">1</p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div>
+                        <div class="mt-4">
+                            <p>1</p>
+                        </div>
+                        <div class="img">
+                            <img src="https://styles.redditmedia.com/t5_1n5hle/styles/profileIcon_snoo005dec55-02ea-4efb-94dc-0cf00cf6b6ed-headshot.png?width=256&height=256&frame=1&crop=256:256,smart&s=1e578f37f257b723802f1f40e27cadf935830821"
+                                alt="">
+                        </div>
+                        <div class="name">
+                            <a href="">oxi-moronical</a>
+                        </div>
+                        <div class="svg">
+                            <svg class="_2R4rnD4fdTnIksADG42tm- _1HqxlPwcLJ3eBF_qCn5-go" viewBox="0 0 74 74" fill="none"
+                                xmlns="http://www.w3.org/2000/svg" data-testid="bolt-tier2">
+                                <path
+                                    d="M28.03 73.65h-.08a3.47 3.47 0 01-2.48-1.15l-6.93-7.59a3.47 3.47 0 01-.69-3.63l4.5-10.73H19.6a3.47 3.47 0 01-2.56-1.15L10.1 41.8a3.47 3.47 0 01-.67-3.65L24.86 2.62A3.47 3.47 0 0128.02.54l29.8-.2a3.47 3.47 0 012.55 1.16L67.3 9.1a3.47 3.47 0 01.16 4.5l-7.5 9.54c.27.16.51.36.72.6l6.94 7.58a3.47 3.47 0 01-.12 4.82L30.47 72.66c-.65.64-1.53 1-2.44 1zM25.1 61.9l3.06 3.31L60.3 33.53l-3.64-4.03h-3.47a3.47 3.47 0 01-2.72-5.62l9.75-12.32-3.93-4.28-25.96.17L16.7 38.8l4.4 4.8h6.45a3.47 3.47 0 013.2 4.81L25.1 61.9z"
+                                    fill="#000"></path>
+                                <path
+                                    d="M34.1 11.6l22.76-7.78 6.99 7.58-17.58 22.21 10.94-7.58 6.98 7.58L27.1 70.18l-6.98-7.58L28.77 47l-10.1.06-7-7.58 22.43-27.9z"
+                                    fill="#FF7A00"></path>
+                                <path d="M27.11 4.01l29.75-.2L39.3 26.04H57.2L20.11 62.6l9.69-23.1-18.12-.01L27.1 4z"
+                                    fill="#FFD15C"></path>
+                                <path d="M35.79 35.25H17.77l11.74-27 18.8-.13-17.53 22.16h16.28l-17 17.75 5.73-12.78z"
+                                    fill="#FFF5C7"></path>
+                                <path
+                                    d="M54.32 26.03H36.77l20-3.03-2.45 3.03zM26.1 48.32l4.34-10.37-7.97 10.14 3.64.23z"
+                                    fill="#000"></path>
+                            </svg>
+                            <p class="mt-3">1</p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div>
+                        <div class="mt-4">
+                            <p>1</p>
+                        </div>
+                        <div class="img">
+                            <img src="https://styles.redditmedia.com/t5_1n5hle/styles/profileIcon_snoo005dec55-02ea-4efb-94dc-0cf00cf6b6ed-headshot.png?width=256&height=256&frame=1&crop=256:256,smart&s=1e578f37f257b723802f1f40e27cadf935830821"
+                                alt="">
+                        </div>
+                        <div class="name">
+                            <a href="">oxi-moronical</a>
+                        </div>
+                        <div class="svg">
+                            <svg class="_2R4rnD4fdTnIksADG42tm- _1HqxlPwcLJ3eBF_qCn5-go" viewBox="0 0 74 74" fill="none"
+                                xmlns="http://www.w3.org/2000/svg" data-testid="bolt-tier2">
+                                <path
+                                    d="M28.03 73.65h-.08a3.47 3.47 0 01-2.48-1.15l-6.93-7.59a3.47 3.47 0 01-.69-3.63l4.5-10.73H19.6a3.47 3.47 0 01-2.56-1.15L10.1 41.8a3.47 3.47 0 01-.67-3.65L24.86 2.62A3.47 3.47 0 0128.02.54l29.8-.2a3.47 3.47 0 012.55 1.16L67.3 9.1a3.47 3.47 0 01.16 4.5l-7.5 9.54c.27.16.51.36.72.6l6.94 7.58a3.47 3.47 0 01-.12 4.82L30.47 72.66c-.65.64-1.53 1-2.44 1zM25.1 61.9l3.06 3.31L60.3 33.53l-3.64-4.03h-3.47a3.47 3.47 0 01-2.72-5.62l9.75-12.32-3.93-4.28-25.96.17L16.7 38.8l4.4 4.8h6.45a3.47 3.47 0 013.2 4.81L25.1 61.9z"
+                                    fill="#000"></path>
+                                <path
+                                    d="M34.1 11.6l22.76-7.78 6.99 7.58-17.58 22.21 10.94-7.58 6.98 7.58L27.1 70.18l-6.98-7.58L28.77 47l-10.1.06-7-7.58 22.43-27.9z"
+                                    fill="#FF7A00"></path>
+                                <path d="M27.11 4.01l29.75-.2L39.3 26.04H57.2L20.11 62.6l9.69-23.1-18.12-.01L27.1 4z"
+                                    fill="#FFD15C"></path>
+                                <path d="M35.79 35.25H17.77l11.74-27 18.8-.13-17.53 22.16h16.28l-17 17.75 5.73-12.78z"
+                                    fill="#FFF5C7"></path>
+                                <path
+                                    d="M54.32 26.03H36.77l20-3.03-2.45 3.03zM26.1 48.32l4.34-10.37-7.97 10.14 3.64.23z"
+                                    fill="#000"></path>
+                            </svg>
+                            <p class="mt-3">1</p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div>
+                        <div class="mt-4">
+                            <p>1</p>
+                        </div>
+                        <div class="img">
+                            <img src="https://styles.redditmedia.com/t5_1n5hle/styles/profileIcon_snoo005dec55-02ea-4efb-94dc-0cf00cf6b6ed-headshot.png?width=256&height=256&frame=1&crop=256:256,smart&s=1e578f37f257b723802f1f40e27cadf935830821"
+                                alt="">
+                        </div>
+                        <div class="name">
+                            <a href="">oxi-moronical</a>
+                        </div>
+                        <div class="svg">
+                            <svg class="_2R4rnD4fdTnIksADG42tm- _1HqxlPwcLJ3eBF_qCn5-go" viewBox="0 0 74 74" fill="none"
+                                xmlns="http://www.w3.org/2000/svg" data-testid="bolt-tier2">
+                                <path
+                                    d="M28.03 73.65h-.08a3.47 3.47 0 01-2.48-1.15l-6.93-7.59a3.47 3.47 0 01-.69-3.63l4.5-10.73H19.6a3.47 3.47 0 01-2.56-1.15L10.1 41.8a3.47 3.47 0 01-.67-3.65L24.86 2.62A3.47 3.47 0 0128.02.54l29.8-.2a3.47 3.47 0 012.55 1.16L67.3 9.1a3.47 3.47 0 01.16 4.5l-7.5 9.54c.27.16.51.36.72.6l6.94 7.58a3.47 3.47 0 01-.12 4.82L30.47 72.66c-.65.64-1.53 1-2.44 1zM25.1 61.9l3.06 3.31L60.3 33.53l-3.64-4.03h-3.47a3.47 3.47 0 01-2.72-5.62l9.75-12.32-3.93-4.28-25.96.17L16.7 38.8l4.4 4.8h6.45a3.47 3.47 0 013.2 4.81L25.1 61.9z"
+                                    fill="#000"></path>
+                                <path
+                                    d="M34.1 11.6l22.76-7.78 6.99 7.58-17.58 22.21 10.94-7.58 6.98 7.58L27.1 70.18l-6.98-7.58L28.77 47l-10.1.06-7-7.58 22.43-27.9z"
+                                    fill="#FF7A00"></path>
+                                <path d="M27.11 4.01l29.75-.2L39.3 26.04H57.2L20.11 62.6l9.69-23.1-18.12-.01L27.1 4z"
+                                    fill="#FFD15C"></path>
+                                <path d="M35.79 35.25H17.77l11.74-27 18.8-.13-17.53 22.16h16.28l-17 17.75 5.73-12.78z"
+                                    fill="#FFF5C7"></path>
+                                <path
+                                    d="M54.32 26.03H36.77l20-3.03-2.45 3.03zM26.1 48.32l4.34-10.37-7.97 10.14 3.64.23z"
+                                    fill="#000"></path>
+                            </svg>
+                            <p class="mt-3">1</p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div>
+                        <div class="mt-4">
+                            <p>1</p>
+                        </div>
+                        <div class="img">
+                            <img src="https://styles.redditmedia.com/t5_1n5hle/styles/profileIcon_snoo005dec55-02ea-4efb-94dc-0cf00cf6b6ed-headshot.png?width=256&height=256&frame=1&crop=256:256,smart&s=1e578f37f257b723802f1f40e27cadf935830821"
+                                alt="">
+                        </div>
+                        <div class="name">
+                            <a href="">oxi-moronical</a>
+                        </div>
+                        <div class="svg">
+                            <svg class="_2R4rnD4fdTnIksADG42tm- _1HqxlPwcLJ3eBF_qCn5-go" viewBox="0 0 74 74" fill="none"
+                                xmlns="http://www.w3.org/2000/svg" data-testid="bolt-tier2">
+                                <path
+                                    d="M28.03 73.65h-.08a3.47 3.47 0 01-2.48-1.15l-6.93-7.59a3.47 3.47 0 01-.69-3.63l4.5-10.73H19.6a3.47 3.47 0 01-2.56-1.15L10.1 41.8a3.47 3.47 0 01-.67-3.65L24.86 2.62A3.47 3.47 0 0128.02.54l29.8-.2a3.47 3.47 0 012.55 1.16L67.3 9.1a3.47 3.47 0 01.16 4.5l-7.5 9.54c.27.16.51.36.72.6l6.94 7.58a3.47 3.47 0 01-.12 4.82L30.47 72.66c-.65.64-1.53 1-2.44 1zM25.1 61.9l3.06 3.31L60.3 33.53l-3.64-4.03h-3.47a3.47 3.47 0 01-2.72-5.62l9.75-12.32-3.93-4.28-25.96.17L16.7 38.8l4.4 4.8h6.45a3.47 3.47 0 013.2 4.81L25.1 61.9z"
+                                    fill="#000"></path>
+                                <path
+                                    d="M34.1 11.6l22.76-7.78 6.99 7.58-17.58 22.21 10.94-7.58 6.98 7.58L27.1 70.18l-6.98-7.58L28.77 47l-10.1.06-7-7.58 22.43-27.9z"
+                                    fill="#FF7A00"></path>
+                                <path d="M27.11 4.01l29.75-.2L39.3 26.04H57.2L20.11 62.6l9.69-23.1-18.12-.01L27.1 4z"
+                                    fill="#FFD15C"></path>
+                                <path d="M35.79 35.25H17.77l11.74-27 18.8-.13-17.53 22.16h16.28l-17 17.75 5.73-12.78z"
+                                    fill="#FFF5C7"></path>
+                                <path
+                                    d="M54.32 26.03H36.77l20-3.03-2.45 3.03zM26.1 48.32l4.34-10.37-7.97 10.14 3.64.23z"
+                                    fill="#000"></path>
+                            </svg>
+                            <p class="mt-3">1</p>
+                        </div>
+                    </div>
+                    <hr>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <script src="../js/reddit.js"></script>
+    <script src="/Bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>

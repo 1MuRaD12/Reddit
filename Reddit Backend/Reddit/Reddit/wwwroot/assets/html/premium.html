@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortout icon" type="image/x-icon" href="../image/unnamed.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/Bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../scss/style.css">
+    <title>Reddit</title>
+</head>
+
+<body>
+
+    <header class="header">
+        <nav>
+            <div class="contain">
+                <div class="row">
+                    <div class="col-lg-2 col-sm-3 col-md-3 col-3 svg">
+                        <a aria-label="Home" class="_30BbATRhFv3V83DHNDjJAO" href="/">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                                class="_1O4jTk-dZ-VIxsCuYB6OR8 ">
+                                <g>
+                                    <circle fill="#FF4500" cx="10" cy="10" r="10"></circle>
+                                    <path fill="#FFF"
+                                        d="M16.67,10A1.46,1.46,0,0,0,14.2,9a7.12,7.12,0,0,0-3.85-1.23L11,4.65,13.14,5.1a1,1,0,1,0,.13-0.61L10.82,4a0.31,0.31,0,0,0-.37.24L9.71,7.71a7.14,7.14,0,0,0-3.9,1.23A1.46,1.46,0,1,0,4.2,11.33a2.87,2.87,0,0,0,0,.44c0,2.24,2.61,4.06,5.83,4.06s5.83-1.82,5.83-4.06a2.87,2.87,0,0,0,0-.44A1.46,1.46,0,0,0,16.67,10Zm-10,1a1,1,0,1,1,1,1A1,1,0,0,1,6.67,11Zm5.81,2.75a3.84,3.84,0,0,1-2.47.77,3.84,3.84,0,0,1-2.47-.77,0.27,0.27,0,0,1,.38-0.38A3.27,3.27,0,0,0,10,14a3.28,3.28,0,0,0,2.09-.61A0.27,0.27,0,1,1,12.48,13.79Zm-0.18-1.71a1,1,0,1,1,1-1A1,1,0,0,1,12.29,12.08Z">
+                                    </path>
+                                </g>
+                            </svg>
+                            <svg class="_1bWuGs_1sq4Pqy099x_yy-" viewBox="0 0 57 18" xmlns="http://www.w3.org/2000/svg">
+                                <g fill="#1c1c1c">
+                                    <path
+                                        d="M54.63,16.52V7.68h1a1,1,0,0,0,1.09-1V6.65a1,1,0,0,0-.93-1.12H54.63V3.88a1.23,1.23,0,0,0-1.12-1.23,1.2,1.2,0,0,0-1.27,1.11V5.55h-1a1,1,0,0,0-1.09,1v.07a1,1,0,0,0,.93,1.12h1.13v8.81a1.19,1.19,0,0,0,1.19,1.19h0a1.19,1.19,0,0,0,1.25-1.12A.17.17,0,0,0,54.63,16.52Z">
+                                    </path>
+                                    <circle fill="#FF4500" cx="47.26" cy="3.44" r="2.12"></circle>
+                                    <path d="M48.44,7.81a1.19,1.19,0,1,0-2.38,0h0v8.71a1.19,1.19,0,0,0,2.38,0Z"></path>
+                                    <path
+                                        d="M30.84,1.19A1.19,1.19,0,0,0,29.65,0h0a1.19,1.19,0,0,0-1.19,1.19V6.51a4.11,4.11,0,0,0-3-1.21c-3.1,0-5.69,2.85-5.69,6.35S22.28,18,25.42,18a4.26,4.26,0,0,0,3.1-1.23,1.17,1.17,0,0,0,1.47.8,1.2,1.2,0,0,0,.85-1.05ZM25.41,15.64c-1.83,0-3.32-1.77-3.32-4s1.48-4,3.32-4,3.31,1.78,3.31,4-1.47,3.95-3.3,3.95Z">
+                                    </path>
+                                    <path
+                                        d="M43.28,1.19A1.19,1.19,0,0,0,42.09,0h0a1.18,1.18,0,0,0-1.18,1.19h0V6.51a4.15,4.15,0,0,0-3-1.21c-3.1,0-5.69,2.85-5.69,6.35S34.72,18,37.86,18A4.26,4.26,0,0,0,41,16.77a1.17,1.17,0,0,0,1.47.8,1.19,1.19,0,0,0,.85-1.05ZM37.85,15.64c-1.83,0-3.31-1.77-3.31-4s1.47-4,3.31-4,3.31,1.78,3.31,4-1.47,3.95-3.3,3.95Z">
+                                    </path>
+                                    <path
+                                        d="M17.27,12.44a1.49,1.49,0,0,0,1.59-1.38v-.15a4.81,4.81,0,0,0-.1-.85A5.83,5.83,0,0,0,13.25,5.3c-3.1,0-5.69,2.85-5.69,6.35S10.11,18,13.25,18a5.66,5.66,0,0,0,4.39-1.84,1.23,1.23,0,0,0-.08-1.74l-.11-.09a1.29,1.29,0,0,0-1.58.17,3.91,3.91,0,0,1-2.62,1.12A3.54,3.54,0,0,1,10,12.44h7.27Zm-4-4.76a3.41,3.41,0,0,1,3.09,2.64H10.14A3.41,3.41,0,0,1,13.24,7.68Z">
+                                    </path>
+                                    <path
+                                        d="M7.68,6.53a1.19,1.19,0,0,0-1-1.18A4.56,4.56,0,0,0,2.39,6.91V6.75A1.2,1.2,0,0,0,0,6.75v9.77a1.23,1.23,0,0,0,1.12,1.24,1.19,1.19,0,0,0,1.26-1.1.66.66,0,0,0,0-.14v-5A3.62,3.62,0,0,1,5.81,7.7a4.87,4.87,0,0,1,.54,0h.24A1.18,1.18,0,0,0,7.68,6.53Z">
+                                    </path>
+                                </g>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="col-lg-6 col-sm-6 col-md-6 col-6 search mt-2">
+                        <form action="search">
+                            <label for="">
+                                <div>
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </div>
+                            </label>
+                            <input type="text" placeholder="Serach Reddit" class="input" id="search-byid">
+                        </form>
+                    </div>
+                    <div class="col-lg-4 col-sm-3 col-md-3 col-3 mt-2 account">
+                        <div class="button">
+                            <button id="myBtn"><strong>Log In</strong></button>
+                            <button class="sign"><a href="../html/Register.html">Sign In</a></button>
+                        </div>
+                        <div class="icon">
+                            <button class="dropdown-btn">
+                                <a class="a"><i class="fa-regular fa-user i"></i><i
+                                        class="fa-solid fa-angle-down i"></i></a>
+                            </button>
+                            <div class="dropdown-container">
+                                <div class="drop">
+                                    <a href="../html/premium.html"><i class="fa-regular fa-life-ring"></i> Premium</a>
+                                </div>
+
+                                <div class="drop">
+                                    <a href="#"><i class="fa-solid fa-bullseye"></i> Talk</a>
+                                </div>
+
+                                <div class="down">
+                                    <button class="dropdown-btn icon">
+                                        <a href="#"><i class="fa-solid fa-clock-rotate-left"></i> Recent Cpmmunities <i
+                                                class="fa-solid fa-angle-up i"></i></a>
+                                    </button>
+                                    <div class="dropdown-container">
+                                        <a href="../html/usermain.html"> <img
+                                                src="../image/communityIcon_6fzlk8ukx6s51.jpg" alt=""> A
+                                            subreddit for cut...</a>
+                                        <a href="../html/usermain.html"><img
+                                                src="../image/Rtu2Mw0L-mx7AeYtHKkbAh75jQbgzy_Hk2UIlLeZFSs.png" alt="">
+                                            Unexpected</a>
+                                    </div>
+                                </div>
+
+                                <div class="down">
+                                    <button class="dropdown-btn icon">
+                                        <a href="#"><i class="fa-brands fa-cc-discover"></i> Explore <i
+                                                class="fa-solid fa-angle-up i"></i></a>
+                                    </button>
+                                    <div class="dropdown-container">
+                                        <a href="#">Gaming</a>
+                                        <a href="#">Sports</a>
+                                        <a href="#">Television</a>
+                                        <a href="#">Celebrity</a>
+                                        <a href="#">Business,Economic</a>
+                                        <a href="#">Crypto</a>
+                                        <a href="#">More Topics</a>
+                                    </div>
+                                </div>
+
+                                <div class="down">
+                                    <button class="dropdown-btn icon">
+                                        <a href="#"><i class="fa-solid fa-gear"></i> Setting <i
+                                                class="fa-solid fa-angle-up i"></i></a>
+                                    </button>
+                                    <div class="dropdown-container">
+                                        <div>
+                                            <input type="checkbox" class="checkbox" id="checkbox">
+                                            <label for="checkbox" class="label">
+                                                <i class="fas fa-moon"></i>
+                                                <i class='fas fa-sun'></i>
+                                                <div class='ball'>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="drop">
+                                    <a href="#"><i class="fa-solid fa-bullhorn"></i> Advertise on Reddit</a>
+                                </div>
+
+                                <div class="drop">
+                                    <a href="#"><i class="fa-regular fa-circle-question"></i> Help Center</a>
+                                </div>
+
+                                <div class="down">
+                                    <button class="dropdown-btn icon">
+                                        <a href="#"><i class="fa-solid fa-circle-info"></i> More <i
+                                                class="fa-solid fa-angle-up i"></i></a>
+                                    </button>
+                                    <div class="dropdown-container">
+                                        <a
+                                            href="https://apps.apple.com/US/app/id1064216828?shortlink=b3d845e&is_retargeting=true&c=ios_reddit_footer&pid=reddit_footer">Reddit
+                                            IOS</a>
+                                        <a
+                                            href="https://play.google.com/store/apps/details?id=com.reddit.frontpage&shortlink=4c212f61&is_retargeting=true&c=android_reddit_footer&pid=reddit_footer">Reddit
+                                            Android</a>
+                                        <a href="">Blog</a>
+                                    </div>
+                                </div>
+
+                                <div class="down">
+                                    <button class="dropdown-btn icon"><a href="#"><i class="fa-solid fa-newspaper"></i>
+                                            Terms & Policies <i class="fa-solid fa-angle-up i"></i></a></button>
+                                    <div class="dropdown-container">
+                                        <a href="">User Agreement</a>
+                                        <a href="">Privacy Policy</a>
+                                        <a href="">Content Policy</a>
+                                        <a href="">Moderator Guidelnes</a>
+                                    </div>
+                                </div>
+
+                                <div class="drop">
+                                    <a href="#"><i class="fa-regular fa-address-card"></i> Sign Up or Log In</a>
+                                </div>
+
+                                <p class="p">© 2022 Reddit, Inc. All rights reserved</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <main>
+        <section class="backgroundimg">
+            <div class="container">
+                <div class="row">
+                    <div class="background">
+                        <div class="svg">
+                            <h1 class="GZKGDIHeqtU51PlPpyUL_" style="font-size: 10px;">
+                                <svg class="_2QdbMXAwLpWVLJfDJ275mD" viewBox="0 0 630 96"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill="#ff4500"
+                                        d="M95.349,6.185a3.136,3.136,0,0,0-2.458-1.2H88.517A164.2,164.2,0,0,1,48.761.1a2.962,2.962,0,0,0-1.5,0A164.2,164.2,0,0,1,7.509,4.988H3.125A3.111,3.111,0,0,0,.1,8.858,164.1,164.1,0,0,1,5,48.614V67.819A20.392,20.392,0,0,0,25.362,88.186a33.738,33.738,0,0,1,20.721,7.151,3.126,3.126,0,0,0,3.85,0,33.734,33.734,0,0,1,20.721-7.151A20.391,20.391,0,0,0,91.02,67.819V48.614A164.147,164.147,0,0,1,95.913,8.858,3.119,3.119,0,0,0,95.349,6.185Z">
+                                    </path>
+                                    <path fill="#fff"
+                                        d="M79.992,48a7,7,0,0,0-11.855-5.036,34.261,34.261,0,0,0-18.72-5.939l3.189-15,10.418,2.215a5.008,5.008,0,1,0,.512-2.447L51.9,19.318a1.25,1.25,0,0,0-1.483.963l-3.561,16.74a34.368,34.368,0,0,0-18.994,5.93,7,7,0,1,0-7.706,11.432,13.771,13.771,0,0,0-.167,2.117c0,10.77,12.536,19.5,28,19.5s28-8.73,28-19.5a13.851,13.851,0,0,0-.164-2.1A7,7,0,0,0,79.992,48ZM32,53a5,5,0,1,1,5,5A5.007,5.007,0,0,1,32,53ZM59.88,66.212c-3.412,3.408-9.951,3.673-11.874,3.673s-8.463-.265-11.872-3.673a1.3,1.3,0,1,1,1.833-1.832c2.151,2.151,6.752,2.914,10.039,2.914s7.889-.764,10.043-2.915a1.3,1.3,0,1,1,1.831,1.833ZM59,58a5,5,0,1,1,5-5A5.006,5.006,0,0,1,59,58Z">
+                                    </path>
+                                    <path fill="#ff4500"
+                                        d="M157.1,75.454H144.637l-9.8-17.217q-1.416.069-2.157.068h-4.11V75.454H117.515V25.793h17.924a20.921,20.921,0,0,1,8.861,1.8,14.209,14.209,0,0,1,6.132,5.238,14.742,14.742,0,0,1,2.223,8.187,16.721,16.721,0,0,1-1.971,8.07,15.976,15.976,0,0,1-5.643,5.979ZM128.566,49.31h5.559a9.153,9.153,0,0,0,4.009-.843,6.444,6.444,0,0,0,2.729-2.392,6.61,6.61,0,0,0,.977-3.605,6.53,6.53,0,0,0-.994-3.6,6.46,6.46,0,0,0-2.83-2.392,10.222,10.222,0,0,0-4.295-.842h-5.155Z">
+                                    </path>
+                                    <path fill="#ff4500"
+                                        d="M190.659,60.765H166.267a9.356,9.356,0,0,0,3.453,4.969,9.772,9.772,0,0,0,5.913,1.8,16.426,16.426,0,0,0,4.885-.774,12.255,12.255,0,0,0,3.841-1.82l3.3,7.952a17.24,17.24,0,0,1-5.223,2.256,25.442,25.442,0,0,1-6.637.843,20.944,20.944,0,0,1-10.141-2.358,16.56,16.56,0,0,1-6.7-6.571,19.369,19.369,0,0,1-2.359-9.635,19.506,19.506,0,0,1,2.426-9.821,17.172,17.172,0,0,1,6.519-6.587,17.812,17.812,0,0,1,8.945-2.325,17.062,17.062,0,0,1,8.474,2.14,15.607,15.607,0,0,1,6.03,6.014,17.519,17.519,0,0,1,2.207,8.827A24.352,24.352,0,0,1,190.659,60.765Zm-9.265-6.671a6.819,6.819,0,0,0-1.937-5.121,7.005,7.005,0,0,0-5.1-1.887,7.868,7.868,0,0,0-5.374,1.9,9.209,9.209,0,0,0-2.881,5.105Z">
+                                    </path>
+                                    <path fill="#ff4500"
+                                        d="M222.464,23.569H233.11V75.454H222.969V71.107H222.8a14.246,14.246,0,0,1-10.984,4.886,16.227,16.227,0,0,1-14.453-8.676,20.341,20.341,0,0,1-2.325-9.956,20.057,20.057,0,0,1,2.409-10.09,16.53,16.53,0,0,1,6.317-6.418,16.889,16.889,0,0,1,8.389-2.19,14.771,14.771,0,0,1,5.576,1.027,13.657,13.657,0,0,1,4.5,2.949h.236Zm-3.892,42.08a8.72,8.72,0,0,0,3.184-3.385,10.184,10.184,0,0,0,1.18-4.936,10.386,10.386,0,0,0-1.129-4.886,8.422,8.422,0,0,0-3.133-3.369,8.588,8.588,0,0,0-4.532-1.213,8.682,8.682,0,0,0-4.532,1.2,8.429,8.429,0,0,0-3.15,3.336,10.152,10.152,0,0,0-1.145,4.868,10.585,10.585,0,0,0,1.128,4.919,8.55,8.55,0,0,0,3.151,3.436,8.81,8.81,0,0,0,8.978.033Z">
+                                    </path>
+                                    <path fill="#ff4500"
+                                        d="M264.848,23.569h10.646V75.454H265.353V71.107h-.168A14.246,14.246,0,0,1,254.2,75.993a16.227,16.227,0,0,1-14.453-8.676,20.341,20.341,0,0,1-2.325-9.956,20.057,20.057,0,0,1,2.409-10.09,16.523,16.523,0,0,1,6.317-6.418,16.886,16.886,0,0,1,8.389-2.19,14.771,14.771,0,0,1,5.576,1.027,13.657,13.657,0,0,1,4.5,2.949h.236Zm-3.892,42.08a8.728,8.728,0,0,0,3.184-3.385,10.183,10.183,0,0,0,1.179-4.936,10.374,10.374,0,0,0-1.129-4.886,8.412,8.412,0,0,0-3.132-3.369,8.591,8.591,0,0,0-4.532-1.213,8.679,8.679,0,0,0-4.532,1.2,8.422,8.422,0,0,0-3.15,3.336,10.152,10.152,0,0,0-1.145,4.868,10.585,10.585,0,0,0,1.128,4.919,8.55,8.55,0,0,0,3.151,3.436,8.81,8.81,0,0,0,8.978.033Z">
+                                    </path>
+                                    <path fill="#ff4500"
+                                        d="M284.456,34.148a6.617,6.617,0,0,1-2.342-8.928,6.192,6.192,0,0,1,2.342-2.324,6.561,6.561,0,0,1,3.3-.843,6.493,6.493,0,0,1,3.268,12.1,6.6,6.6,0,0,1-6.57,0Zm8.591,41.306H282.4V39.2h10.646Z">
+                                    </path>
+                                    <path fill="#ff4500"
+                                        d="M315.418,39.2H323.2v9.063h-7.783V75.454H304.772V48.265h-7.749V39.2h7.749V28.825h10.646Z">
+                                    </path>
+                                    <path fill="#ff4500"
+                                        d="M367.428,27.8a14.469,14.469,0,0,1,6.317,5.71,16.7,16.7,0,0,1,2.19,8.659A17.514,17.514,0,0,1,373.7,51.1a15.51,15.51,0,0,1-6.318,6.031,19.809,19.809,0,0,1-9.4,2.156h-6.166V75.454H340.761V25.793h16.913A22.1,22.1,0,0,1,367.428,27.8ZM357.405,49.545a8.728,8.728,0,0,0,4.076-.909,6.562,6.562,0,0,0,2.7-2.51,7.005,7.005,0,0,0,.943-3.622,6.126,6.126,0,0,0-2.173-5.021A8.958,8.958,0,0,0,357,35.631h-5.188V49.545Z">
+                                    </path>
+                                    <path fill="#ff4500"
+                                        d="M404.775,38.882a5.377,5.377,0,0,1,1.651.522l-4.279,10.175a5.732,5.732,0,0,0-1.263-.388,8.251,8.251,0,0,0-1.736-.185,8.08,8.08,0,0,0-3.622.876,7.359,7.359,0,0,0-2.914,2.628,7.721,7.721,0,0,0-1.145,4.312V75.454H380.82V39.2h10.344v5.087h.2a15.107,15.107,0,0,1,4.582-4.025,12.458,12.458,0,0,1,6.367-1.6A13.1,13.1,0,0,1,404.775,38.882Z">
+                                    </path>
+                                    <path fill="#ff4500"
+                                        d="M440.151,60.765H415.758a9.367,9.367,0,0,0,3.453,4.969,9.776,9.776,0,0,0,5.914,1.8,16.431,16.431,0,0,0,4.885-.774,12.255,12.255,0,0,0,3.841-1.82l3.3,7.952a17.234,17.234,0,0,1-5.222,2.256,25.447,25.447,0,0,1-6.637.843,20.941,20.941,0,0,1-10.141-2.358,16.562,16.562,0,0,1-6.7-6.571,19.379,19.379,0,0,1-2.358-9.635,19.5,19.5,0,0,1,2.426-9.821,17.172,17.172,0,0,1,6.519-6.587,17.812,17.812,0,0,1,8.945-2.325,17.062,17.062,0,0,1,8.474,2.14,15.613,15.613,0,0,1,6.03,6.014,17.519,17.519,0,0,1,2.207,8.827A24.352,24.352,0,0,1,440.151,60.765Zm-9.265-6.671a6.819,6.819,0,0,0-1.937-5.121,7.006,7.006,0,0,0-5.105-1.887,7.869,7.869,0,0,0-5.374,1.9,9.213,9.213,0,0,0-2.88,5.105Z">
+                                    </path>
+                                    <path fill="#ff4500"
+                                        d="M493.282,40.7a10.863,10.863,0,0,1,3.74,5.121,19.607,19.607,0,0,1,1.078,6.52V75.454H487.386v-21.8a7.294,7.294,0,0,0-1.246-4.564,4.257,4.257,0,0,0-3.572-1.6,4.976,4.976,0,0,0-3.857,1.6,6.515,6.515,0,0,0-1.466,4.564v21.8H466.6v-21.8a7.288,7.288,0,0,0-1.247-4.564,4.294,4.294,0,0,0-3.6-1.6,4.955,4.955,0,0,0-3.857,1.617,6.637,6.637,0,0,0-1.466,4.616V75.454H445.777V39.2h10.141v4.615h.169a12.481,12.481,0,0,1,4.312-3.84,11.742,11.742,0,0,1,5.559-1.314,10.357,10.357,0,0,1,5.256,1.28,9.366,9.366,0,0,1,3.572,3.774h.2a12.728,12.728,0,0,1,4.868-3.757,15.291,15.291,0,0,1,6.284-1.3A11.461,11.461,0,0,1,493.282,40.7Z">
+                                    </path>
+                                    <path fill="#ff4500"
+                                        d="M506.826,34.148a6.617,6.617,0,0,1-2.342-8.928,6.2,6.2,0,0,1,2.342-2.324,6.561,6.561,0,0,1,3.3-.843,6.493,6.493,0,0,1,3.268,12.1,6.6,6.6,0,0,1-6.57,0Zm8.591,41.306H504.771V39.2h10.646Z">
+                                    </path>
+                                    <path fill="#ff4500"
+                                        d="M544.763,39.2h10.646V75.487H545.133V70.7h-.269a11.143,11.143,0,0,1-4.549,3.892,14.315,14.315,0,0,1-6.367,1.431,11.771,11.771,0,0,1-6.351-1.667,10.928,10.928,0,0,1-4.111-4.632,15.394,15.394,0,0,1-1.431-6.773V39.2H532.7V60.6a7.073,7.073,0,0,0,1.516,4.885,5.337,5.337,0,0,0,4.178,1.685,6.3,6.3,0,0,0,4.582-1.735,6.524,6.524,0,0,0,1.786-4.9Z">
+                                    </path>
+                                    <path fill="#ff4500"
+                                        d="M609.652,40.7a10.863,10.863,0,0,1,3.74,5.121,19.607,19.607,0,0,1,1.078,6.52V75.454H603.756v-21.8a7.294,7.294,0,0,0-1.246-4.564,4.257,4.257,0,0,0-3.572-1.6,4.978,4.978,0,0,0-3.857,1.6,6.52,6.52,0,0,0-1.466,4.564v21.8H582.969v-21.8a7.288,7.288,0,0,0-1.247-4.564,4.294,4.294,0,0,0-3.605-1.6,4.955,4.955,0,0,0-3.857,1.617,6.637,6.637,0,0,0-1.466,4.616V75.454H562.147V39.2h10.142v4.615h.168a12.475,12.475,0,0,1,4.313-3.84,11.737,11.737,0,0,1,5.559-1.314,10.356,10.356,0,0,1,5.255,1.28,9.366,9.366,0,0,1,3.572,3.774h.2a12.723,12.723,0,0,1,4.869-3.757,15.283,15.283,0,0,1,6.283-1.3A11.459,11.459,0,0,1,609.652,40.7Z">
+                                    </path>
+                                </svg>
+                            </h1>
+                        </div>
+                        <div class="title mt-3">
+                            <strong>Help support Reddit and get VIP treatment, exclusive access, and monthly
+                                coins.</strong>
+                        </div>
+                        <div class="button mt-4">
+                            <button class="Month">$5.99/Month</button>
+                            <button class="Year">$49.99/Year <span>Save 30%</span></button>
+                        </div>
+                        <div class="mt-3">
+                            <p>Subscriptions automatically renew</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="premToday">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1>Join Reddit Premium Today</h1>
+                        <div class="row">
+                            <div class="col-lg-4 col-sm-4 mt-4">
+                                <div class="first">
+                                    <div><img
+                                            src="https://www.redditstatic.com/desktop2x/img/gold/premium-marketing/benefits-icons/premium-ad-free.png"
+                                            alt=""></div>
+                                    <div>
+                                        <strong>Ad-free Browsing</strong>
+                                        <p>Enjoy redditing without interruptions from ads</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-sm-4 mt-4">
+                                <div class="first">
+                                    <div><img
+                                            src="https://www.redditstatic.com/desktop2x/img/gold/premium-marketing/benefits-icons/premium-avatars.png"
+                                            alt=""></div>
+                                    <div>
+                                        <strong>Ad-free Browsing</strong>
+                                        <p>Enjoy redditing without interruptions from ads</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-sm-4 mt-4">
+                                <div class="first">
+                                    <div><img
+                                            src="https://www.redditstatic.com/desktop2x/img/gold/premium-marketing/benefits-icons/premium-monthly-coins.png"
+                                            alt=""></div>
+                                    <div>
+                                        <strong>Ad-free Browsing</strong>
+                                        <p>Enjoy redditing without interruptions from ads</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-sm-4 mt-4">
+                                <div class="first">
+                                    <div><img
+                                            src="https://www.redditstatic.com/desktop2x/img/gold/premium-marketing/benefits-icons/premium-lounge.png"
+                                            alt=""></div>
+                                    <div>
+                                        <strong>Ad-free Browsing</strong>
+                                        <p>Enjoy redditing without interruptions from ads</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-sm-4 mt-4">
+                                <div class="first">
+                                    <div><img
+                                            src="https://www.redditstatic.com/desktop2x/img/gold/premium-marketing/benefits-icons/premium-app-icons.png"
+                                            alt=""></div>
+                                    <div>
+                                        <strong>Ad-free Browsing</strong>
+                                        <p>Enjoy redditing without interruptions from ads</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-sm-4 mt-4">
+                                <div class="first">
+                                    <div><img
+                                            src="https://www.redditstatic.com/desktop2x/img/gold/premium-marketing/benefits-icons/premium-awards.png"
+                                            alt=""></div>
+                                    <div>
+                                        <strong>Ad-free Browsing</strong>
+                                        <p>Enjoy redditing without interruptions from ads</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="button mt-4">
+                                    <button class="Month">$5.99/Month</button>
+                                    <button class="Year">$49.99/Year <span>Save 30%</span></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12 sub">
+                                <p>Subscriptions automatically renew</p>
+                                <p>* Custom app icons and welcome gifts are only available through a paid Reddit Premium
+                                    subscription.</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <a class="bnt">Visit the Reddit Premium FAQs</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <section class="about">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div>
+                            <a href="">
+                                <p>About</p>
+                            </a>
+                            <a href="">
+                                <p>Careers</p>
+                            </a>
+                            <a href="">
+                                <p>Perss</p>
+                            </a>
+                        </div>
+                        <div class="a">
+
+                        </div>
+                        <div>
+                            <a href="">
+                                <p>Advertise</p>
+                            </a>
+                            <a href="">
+                                <p>Blog</p>
+                            </a>
+                            <a href="">
+                                <p>Help</p>
+                            </a>
+                        </div>
+                        <div class="line mt-5"></div>
+                        <div>
+                            <a href="">
+                                <p>Reddit Coins</p>
+                            </a>
+                            <a href="">
+                                <p>Reddit Premium</p>
+                            </a>
+                        </div>
+                        <div class="line mt-5"></div>
+                        <div>
+                            <a href="">
+                                <p>Facebook</p>
+                            </a>
+                            <a href="">
+                                <p>Twitter</p>
+                            </a>
+                            <a href="">
+                                <p>Instagram</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="reddit">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <a href="">Content Policy</a>
+                        <a href="">Privacy Policy</a>
+                        <a href="">User Agreement</a>
+                        <a href="">Mod Policy</a>
+                        <span>© 2022 Reddit, Inc. All rights reserved</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
+
+    <script src="../js/reddit.js"></script>
+    <script src="/Bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>

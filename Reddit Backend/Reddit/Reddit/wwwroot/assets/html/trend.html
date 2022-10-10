@@ -1,0 +1,943 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortout icon" type="image/x-icon" href="../image/unnamed.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/Bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../scss/style.css">
+    <title>Reddit</title>
+</head>
+
+<body>
+
+    <header class="header">
+        <nav>
+            <div class="contain">
+                <div class="row">
+                    <div class="col-lg-2 col-sm-3 col-md-3 col-3 svg">
+                        <a aria-label="Home" class="_30BbATRhFv3V83DHNDjJAO" href="/">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                                class="_1O4jTk-dZ-VIxsCuYB6OR8 ">
+                                <g>
+                                    <circle fill="#FF4500" cx="10" cy="10" r="10"></circle>
+                                    <path fill="#FFF"
+                                        d="M16.67,10A1.46,1.46,0,0,0,14.2,9a7.12,7.12,0,0,0-3.85-1.23L11,4.65,13.14,5.1a1,1,0,1,0,.13-0.61L10.82,4a0.31,0.31,0,0,0-.37.24L9.71,7.71a7.14,7.14,0,0,0-3.9,1.23A1.46,1.46,0,1,0,4.2,11.33a2.87,2.87,0,0,0,0,.44c0,2.24,2.61,4.06,5.83,4.06s5.83-1.82,5.83-4.06a2.87,2.87,0,0,0,0-.44A1.46,1.46,0,0,0,16.67,10Zm-10,1a1,1,0,1,1,1,1A1,1,0,0,1,6.67,11Zm5.81,2.75a3.84,3.84,0,0,1-2.47.77,3.84,3.84,0,0,1-2.47-.77,0.27,0.27,0,0,1,.38-0.38A3.27,3.27,0,0,0,10,14a3.28,3.28,0,0,0,2.09-.61A0.27,0.27,0,1,1,12.48,13.79Zm-0.18-1.71a1,1,0,1,1,1-1A1,1,0,0,1,12.29,12.08Z">
+                                    </path>
+                                </g>
+                            </svg>
+                            <svg class="_1bWuGs_1sq4Pqy099x_yy-" viewBox="0 0 57 18" xmlns="http://www.w3.org/2000/svg">
+                                <g fill="#1c1c1c">
+                                    <path
+                                        d="M54.63,16.52V7.68h1a1,1,0,0,0,1.09-1V6.65a1,1,0,0,0-.93-1.12H54.63V3.88a1.23,1.23,0,0,0-1.12-1.23,1.2,1.2,0,0,0-1.27,1.11V5.55h-1a1,1,0,0,0-1.09,1v.07a1,1,0,0,0,.93,1.12h1.13v8.81a1.19,1.19,0,0,0,1.19,1.19h0a1.19,1.19,0,0,0,1.25-1.12A.17.17,0,0,0,54.63,16.52Z">
+                                    </path>
+                                    <circle fill="#FF4500" cx="47.26" cy="3.44" r="2.12"></circle>
+                                    <path d="M48.44,7.81a1.19,1.19,0,1,0-2.38,0h0v8.71a1.19,1.19,0,0,0,2.38,0Z"></path>
+                                    <path
+                                        d="M30.84,1.19A1.19,1.19,0,0,0,29.65,0h0a1.19,1.19,0,0,0-1.19,1.19V6.51a4.11,4.11,0,0,0-3-1.21c-3.1,0-5.69,2.85-5.69,6.35S22.28,18,25.42,18a4.26,4.26,0,0,0,3.1-1.23,1.17,1.17,0,0,0,1.47.8,1.2,1.2,0,0,0,.85-1.05ZM25.41,15.64c-1.83,0-3.32-1.77-3.32-4s1.48-4,3.32-4,3.31,1.78,3.31,4-1.47,3.95-3.3,3.95Z">
+                                    </path>
+                                    <path
+                                        d="M43.28,1.19A1.19,1.19,0,0,0,42.09,0h0a1.18,1.18,0,0,0-1.18,1.19h0V6.51a4.15,4.15,0,0,0-3-1.21c-3.1,0-5.69,2.85-5.69,6.35S34.72,18,37.86,18A4.26,4.26,0,0,0,41,16.77a1.17,1.17,0,0,0,1.47.8,1.19,1.19,0,0,0,.85-1.05ZM37.85,15.64c-1.83,0-3.31-1.77-3.31-4s1.47-4,3.31-4,3.31,1.78,3.31,4-1.47,3.95-3.3,3.95Z">
+                                    </path>
+                                    <path
+                                        d="M17.27,12.44a1.49,1.49,0,0,0,1.59-1.38v-.15a4.81,4.81,0,0,0-.1-.85A5.83,5.83,0,0,0,13.25,5.3c-3.1,0-5.69,2.85-5.69,6.35S10.11,18,13.25,18a5.66,5.66,0,0,0,4.39-1.84,1.23,1.23,0,0,0-.08-1.74l-.11-.09a1.29,1.29,0,0,0-1.58.17,3.91,3.91,0,0,1-2.62,1.12A3.54,3.54,0,0,1,10,12.44h7.27Zm-4-4.76a3.41,3.41,0,0,1,3.09,2.64H10.14A3.41,3.41,0,0,1,13.24,7.68Z">
+                                    </path>
+                                    <path
+                                        d="M7.68,6.53a1.19,1.19,0,0,0-1-1.18A4.56,4.56,0,0,0,2.39,6.91V6.75A1.2,1.2,0,0,0,0,6.75v9.77a1.23,1.23,0,0,0,1.12,1.24,1.19,1.19,0,0,0,1.26-1.1.66.66,0,0,0,0-.14v-5A3.62,3.62,0,0,1,5.81,7.7a4.87,4.87,0,0,1,.54,0h.24A1.18,1.18,0,0,0,7.68,6.53Z">
+                                    </path>
+                                </g>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="col-lg-6 col-sm-6 col-md-6 col-6 search mt-2">
+                        <form action="search">
+                            <label for="">
+                                <div>
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </div>
+                            </label>
+                            <input type="text" placeholder="Serach Reddit" class="input" id="search-byid">
+                        </form>
+                    </div>
+                    <div class="col-lg-4 col-sm-3 col-md-3 col-3 mt-2 account">
+                        <div class="button">
+                            <button id="myBtn"><strong>Log In</strong></button>
+                            <button class="sign"><a href="../html/Register.html">Sign In</a></button>
+                        </div>
+                        <div class="icon">
+                            <button class="dropdown-btn">
+                                <a class="a"><i class="fa-regular fa-user i"></i><i
+                                        class="fa-solid fa-angle-down i"></i></a>
+                            </button>
+                            <div class="dropdown-container">
+                                <div class="drop">
+                                    <a href="../html/premium.html"><i class="fa-regular fa-life-ring"></i> Premium</a>
+                                </div>
+
+                                <div class="drop">
+                                    <a href="#"><i class="fa-solid fa-bullseye"></i> Talk</a>
+                                </div>
+
+                                <div class="down">
+                                    <button class="dropdown-btn icon">
+                                        <a href="#"><i class="fa-solid fa-clock-rotate-left"></i> Recent Cpmmunities <i
+                                                class="fa-solid fa-angle-up i"></i></a>
+                                    </button>
+                                    <div class="dropdown-container">
+                                        <a href="../html/usermain.html"> <img
+                                                src="../image/communityIcon_6fzlk8ukx6s51.jpg" alt=""> A
+                                            subreddit for cut...</a>
+                                        <a href="../html/usermain.html"><img
+                                                src="../image/Rtu2Mw0L-mx7AeYtHKkbAh75jQbgzy_Hk2UIlLeZFSs.png" alt="">
+                                            Unexpected</a>
+                                    </div>
+                                </div>
+
+                                <div class="down">
+                                    <button class="dropdown-btn icon">
+                                        <a href="#"><i class="fa-brands fa-cc-discover"></i> Explore <i
+                                                class="fa-solid fa-angle-up i"></i></a>
+                                    </button>
+                                    <div class="dropdown-container">
+                                        <a href="#">Gaming</a>
+                                        <a href="#">Sports</a>
+                                        <a href="#">Television</a>
+                                        <a href="#">Celebrity</a>
+                                        <a href="#">Business,Economic</a>
+                                        <a href="#">Crypto</a>
+                                        <a href="#">More Topics</a>
+                                    </div>
+                                </div>
+
+                                <div class="down">
+                                    <button class="dropdown-btn icon">
+                                        <a href="#"><i class="fa-solid fa-gear"></i> Setting <i
+                                                class="fa-solid fa-angle-up i"></i></a>
+                                    </button>
+                                    <div class="dropdown-container">
+                                        <div>
+                                            <input type="checkbox" class="checkbox" id="checkbox">
+                                            <label for="checkbox" class="label">
+                                                <i class="fas fa-moon"></i>
+                                                <i class='fas fa-sun'></i>
+                                                <div class='ball'>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="drop">
+                                    <a href="#"><i class="fa-solid fa-bullhorn"></i> Advertise on Reddit</a>
+                                </div>
+
+                                <div class="drop">
+                                    <a href="#"><i class="fa-regular fa-circle-question"></i> Help Center</a>
+                                </div>
+
+                                <div class="down">
+                                    <button class="dropdown-btn icon">
+                                        <a href="#"><i class="fa-solid fa-circle-info"></i> More <i
+                                                class="fa-solid fa-angle-up i"></i></a>
+                                    </button>
+                                    <div class="dropdown-container">
+                                        <a
+                                            href="https://apps.apple.com/US/app/id1064216828?shortlink=b3d845e&is_retargeting=true&c=ios_reddit_footer&pid=reddit_footer">Reddit
+                                            IOS</a>
+                                        <a
+                                            href="https://play.google.com/store/apps/details?id=com.reddit.frontpage&shortlink=4c212f61&is_retargeting=true&c=android_reddit_footer&pid=reddit_footer">Reddit
+                                            Android</a>
+                                        <a href="">Blog</a>
+                                    </div>
+                                </div>
+
+                                <div class="down">
+                                    <button class="dropdown-btn icon"><a href="#"><i class="fa-solid fa-newspaper"></i>
+                                            Terms & Policies <i class="fa-solid fa-angle-up i"></i></a></button>
+                                    <div class="dropdown-container">
+                                        <a href="">User Agreement</a>
+                                        <a href="">Privacy Policy</a>
+                                        <a href="">Content Policy</a>
+                                        <a href="">Moderator Guidelnes</a>
+                                    </div>
+                                </div>
+
+                                <div class="drop">
+                                    <a href="#"><i class="fa-regular fa-address-card"></i> Sign Up or Log In</a>
+                                </div>
+
+                                <p class="p">© 2022 Reddit, Inc. All rights reserved</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <main>
+
+        <section class="Trendmain mt-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div><button class="down-btn1 bnt">Posts</button></div>
+                        <div><button class="bnt2 down-btn2 bnt">Communities</button></div>
+                        <div><button class="down-btn3 bnt">Peaple </button></div>
+                    </div>
+                </div>
+                <div class="row main1">
+                    <div class="col-lg-7">
+                        <div class="Popularmain">
+                            <div class="buttonmn mt-3">
+                                <div>
+                                    <button class="dropdown-btn">Sort <i class="fa-solid fa-angle-down"></i></button>
+                                    <div class="dropdown-container">
+                                        <a href="" class="a">Relevance</a>
+                                        <a href="" class="a">Host</a>
+                                        <a href="" class="a">Top</a>
+                                        <a href="" class="a">New</a>
+                                        <a href="" class="a">Most Comments</a>
+                                    </div>
+                                </div>
+                                <div>
+                                    <button class="dropdown-btn">Time <i class="fa-solid fa-angle-down"></i></button>
+                                    <div class="dropdown-container">
+                                        <a href="" class="a">All Time</a>
+                                        <a href="" class="a">Past Year</a>
+                                        <a href="" class="a">Past Month</a>
+                                        <a href="" class="a">Past Week</a>
+                                        <a href="" class="a">Past 24 Hours</a>
+                                        <a href="" class="a">Hour</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="main mt-2">
+                                <div class="title mt-2">
+                                    <div class="image">
+                                        <div class="img">
+                                            <div><img
+                                                    src="https://styles.redditmedia.com/t5_2qh87/styles/communityIcon_ub69d1lpjlf51.png"
+                                                    alt=""></div>
+                                            <div><a href="#"><strong class="r">r/space</strong></a></div>
+                                        </div>
+                                        <div class="Title" id="mainBtn">
+                                            <a href="#"><strong>Something behind the moon. Astronomer Jan Koet captured
+                                                    this
+                                                    video.</strong></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="post" id="mainBtn">
+                                    <div>
+                                        <video width="650px" height="400px"
+                                            src="https://preview.redd.it/9vxfblrivmb91.gif?width=600&format=mp4&s=262a685e30c7cd687b063047f81a6bbc5b806cb2"
+                                            controls>
+                                        </video>
+                                        <!-- <img src="./image/Rtu2Mw0L-mx7AeYtHKkbAh75jQbgzy_Hk2UIlLeZFSs.png" alt=""> -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mainmore mt-3">
+                                <div class="title">
+                                    <div>
+                                        <div class="image">
+                                            <div class="img">
+                                                <div><img
+                                                        src="https://styles.redditmedia.com/t5_2qh87/styles/communityIcon_ub69d1lpjlf51.png"
+                                                        alt=""></div>
+                                                <div><a href="#"><strong class="r">r/space</strong></a></div>
+                                            </div>
+                                            <div class="Title" id="mainBtn">
+                                                <a href="#"><strong>Something behind the moon. Astronomer Jan Koet
+                                                        captured
+                                                        this
+                                                        video.</strong></a>
+                                            </div>
+                                        </div>
+                                        <div></div>
+                                    </div>
+                                    <div class="titimg">
+                                        <img src="https://variety.com/wp-content/uploads/2022/07/vince-mcmahon.jpg?w=681&h=383&crop=1"
+                                            alt="">
+                                    </div>
+                                </div>
+                                <div class="title">
+                                    <div>
+                                        <div class="image">
+                                            <div class="img">
+                                                <div><img
+                                                        src="https://styles.redditmedia.com/t5_2qh87/styles/communityIcon_ub69d1lpjlf51.png"
+                                                        alt=""></div>
+                                                <div><a href="#"><strong class="r">r/space</strong></a></div>
+                                            </div>
+                                            <div class="Title" id="mainBtn">
+                                                <a href="#"><strong>Something behind the moon. Astronomer Jan Koet
+                                                        captured
+                                                        this
+                                                        video.</strong></a>
+                                            </div>
+                                        </div>
+                                        <div></div>
+                                    </div>
+                                    <div class="titimg">
+                                        <img src="https://variety.com/wp-content/uploads/2022/07/vince-mcmahon.jpg?w=681&h=383&crop=1"
+                                            alt="">
+                                    </div>
+                                </div>
+                                <div class="title">
+                                    <div>
+                                        <div class="image">
+                                            <div class="img">
+                                                <div><img
+                                                        src="https://styles.redditmedia.com/t5_2qh87/styles/communityIcon_ub69d1lpjlf51.png"
+                                                        alt=""></div>
+                                                <div><a href="#"><strong class="r">r/space</strong></a></div>
+                                            </div>
+                                            <div class="Title" id="mainBtn">
+                                                <a href="#"><strong>Something behind the moon. Astronomer Jan Koet
+                                                        captured
+                                                        this
+                                                        video.</strong></a>
+                                            </div>
+                                        </div>
+                                        <div></div>
+                                    </div>
+                                    <div class="titimg">
+                                        <img src="https://variety.com/wp-content/uploads/2022/07/vince-mcmahon.jpg?w=681&h=383&crop=1"
+                                            alt="">
+                                    </div>
+                                </div>
+                                <div class="title">
+                                    <div>
+                                        <div class="image">
+                                            <div class="img">
+                                                <div><img
+                                                        src="https://styles.redditmedia.com/t5_2qh87/styles/communityIcon_ub69d1lpjlf51.png"
+                                                        alt=""></div>
+                                                <div><a href="#"><strong class="r">r/space</strong></a></div>
+                                            </div>
+                                            <div class="Title" id="mainBtn">
+                                                <a href="#"><strong>Something behind the moon. Astronomer Jan Koet
+                                                        captured
+                                                        this
+                                                        video.</strong></a>
+                                            </div>
+                                        </div>
+                                        <div></div>
+                                    </div>
+                                    <div class="titimg">
+                                        <img src="https://variety.com/wp-content/uploads/2022/07/vince-mcmahon.jpg?w=681&h=383&crop=1"
+                                            alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 mt-5">
+                        <div class="channel">
+                            <div class="communit mt-2">
+                                <h1>Communities</h1>
+                            </div>
+                            <div class="icons">
+                                <div class="first">
+                                    <div class="image"><a href="#"><img
+                                                src="https://a.thumbs.redditmedia.com/ctpsfO1kRuLsbiuKBCUlmAi1EKSbKhLup5EkvDA1lt4.png"
+                                                alt=""></a><a href="#">r/baseball</a>
+                                    </div>
+                                    <div class="bnt" id="myBtn"><a href="#">join</a></div>
+                                </div>
+                                <div class="first">
+                                    <div class="image"><a href="#"><img
+                                                src="https://a.thumbs.redditmedia.com/ctpsfO1kRuLsbiuKBCUlmAi1EKSbKhLup5EkvDA1lt4.png"
+                                                alt=""></a><a href="#">r/baseball</a>
+                                    </div>
+                                    <div class="bnt" id="myBtn"><a href="#">join</a></div>
+                                </div>
+                                <div class="first">
+                                    <div class="image"><a href="#"><img
+                                                src="https://a.thumbs.redditmedia.com/ctpsfO1kRuLsbiuKBCUlmAi1EKSbKhLup5EkvDA1lt4.png"
+                                                alt=""></a><a href="#">r/baseball</a>
+                                    </div>
+                                    <div class="bnt" id="myBtn"><a href="#">join</a></div>
+                                </div>
+                                <div class="first">
+                                    <div class="image"><a href="#"><img
+                                                src="https://a.thumbs.redditmedia.com/ctpsfO1kRuLsbiuKBCUlmAi1EKSbKhLup5EkvDA1lt4.png"
+                                                alt=""></a><a href="#">r/baseball</a>
+                                    </div>
+                                    <div class="bnt" id="myBtn"><a href="#">join</a></div>
+                                </div>
+                                <div class="first">
+                                    <div class="image"><a href="#"><img
+                                                src="https://a.thumbs.redditmedia.com/ctpsfO1kRuLsbiuKBCUlmAi1EKSbKhLup5EkvDA1lt4.png"
+                                                alt=""></a><a href="#">r/baseball</a>
+                                    </div>
+                                    <div class="bnt" id="myBtn"><a href="#">join</a></div>
+                                </div>
+                            </div>
+                            <div class="button mt-3">
+                                <a class="down-btn2">See more communities</a>
+                            </div>
+                        </div>
+                        <div class="channel mt-3">
+                            <div class="communit mt-2">
+                                <h1>Peaple</h1>
+                            </div>
+                            <div class="icons">
+                                <div class="first">
+                                    <div class="image"><a href="#"><img
+                                                src="https://a.thumbs.redditmedia.com/ctpsfO1kRuLsbiuKBCUlmAi1EKSbKhLup5EkvDA1lt4.png"
+                                                alt=""></a><a href="#">r/baseball</a>
+                                    </div>
+                                    <div class="bnt" id="myBtn"><a href="#">join</a></div>
+                                </div>
+                                <div class="first">
+                                    <div class="image"><a href="#"><img
+                                                src="https://a.thumbs.redditmedia.com/ctpsfO1kRuLsbiuKBCUlmAi1EKSbKhLup5EkvDA1lt4.png"
+                                                alt=""></a><a href="#">r/baseball</a>
+                                    </div>
+                                    <div class="bnt" id="myBtn"><a href="#">join</a></div>
+                                </div>
+                                <div class="first">
+                                    <div class="image"><a href="#"><img
+                                                src="https://a.thumbs.redditmedia.com/ctpsfO1kRuLsbiuKBCUlmAi1EKSbKhLup5EkvDA1lt4.png"
+                                                alt=""></a><a href="#">r/baseball</a>
+                                    </div>
+                                    <div class="bnt" id="myBtn"><a href="#">join</a></div>
+                                </div>
+                            </div>
+                            <div class="button mt-3">
+                                <a class="down-btn3">See more people</a>
+                            </div>
+                        </div>
+                        <div class="more mt-3">
+                            <div class="contain">
+                                <div class="row">
+                                    <div class="support">
+                                        <div>
+                                            <a href="#">
+                                                <p>Help</p>
+                                            </a>
+                                            <a href="#">
+                                                <p>Reddit Coins</p>
+                                            </a>
+                                            <a href="#">
+                                                <p>Reddit Premium</p>
+                                            </a>
+                                            <a href="#">
+                                                <p>Communities</p>
+                                            </a>
+                                            <a href="#">
+                                                <p>Rereddit</p>
+                                            </a>
+                                            <a href="#">
+                                                <p>Topics</p>
+                                            </a>
+                                        </div>
+                                        <div>
+                                            <a href="#">
+                                                <P>About</P>
+                                            </a><a href="#">
+                                                <P>Careers</P>
+                                            </a><a href="#">
+                                                <P>Press</P>
+                                            </a><a href="#">
+                                                <P>Advertise</P>
+                                            </a><a href="#">
+                                                <P>Blog</P>
+                                            </a><a href="#">
+                                                <P>Terms</P>
+                                            </a><a href="#">
+                                                <P>Content Policy</P>
+                                            </a><a href="#">
+                                                <P>Privacy Policy</P>
+                                            </a><a href="#">
+                                                <P>Mod Policy</P>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="country">
+                                        <div><a href="#">
+                                                <p>English</p>
+                                            </a><a href="#">
+                                                <p>Français</p>
+                                            </a><a href="#">
+                                                <p>Italiano</p>
+                                            </a></div>
+                                        <div>
+                                            <a href="#">
+                                                <p>Deutsch</p>
+                                            </a><a href="#">
+                                                <p>Espanol</p>
+                                            </a><a href="#">
+                                                <p>Portugues</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="year">
+                                        <p>Reddit Inc © 2022. All rights reserved</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row main2">
+                    <div class="col-lg-12 mt-4">
+                        <div class="comminities">
+                            <div class="image">
+                                <div class="mt-2">
+                                    <img src="../image/xvwxkNXOkvdu9d6S67odp1gCPfhB1A3qKDs7kdwO5ts.png" alt="">
+                                </div>
+                                <div>
+                                    <a href="" class="a">r/trump</a>
+                                    <a href=""><span>. 90.5k Members</span></a>
+                                    <a href="">
+                                        <p>This is a pro-Tramp sub for everything the 45th president</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="button mt-3">
+                                <button class="buton">join</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="comminities">
+                            <div class="image">
+                                <div class="mt-2">
+                                    <img src="../image/xvwxkNXOkvdu9d6S67odp1gCPfhB1A3qKDs7kdwO5ts.png" alt="">
+                                </div>
+                                <div>
+                                    <a href="" class="a">r/trump</a>
+                                    <a href=""><span>. 90.5k Members</span></a>
+                                    <a href="">
+                                        <p>This is a pro-Tramp sub for everything the 45th president</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="button mt-3">
+                                <button class="buton">join</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="comminities">
+                            <div class="image">
+                                <div class="mt-2">
+                                    <img src="../image/xvwxkNXOkvdu9d6S67odp1gCPfhB1A3qKDs7kdwO5ts.png" alt="">
+                                </div>
+                                <div>
+                                    <a href="" class="a">r/trump</a>
+                                    <a href=""><span>. 90.5k Members</span></a>
+                                    <a href="">
+                                        <p>This is a pro-Tramp sub for everything the 45th president</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="button mt-3">
+                                <button class="buton">join</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="comminities">
+                            <div class="image">
+                                <div class="mt-2">
+                                    <img src="../image/xvwxkNXOkvdu9d6S67odp1gCPfhB1A3qKDs7kdwO5ts.png" alt="">
+                                </div>
+                                <div>
+                                    <a href="" class="a">r/trump</a>
+                                    <a href=""><span>. 90.5k Members</span></a>
+                                    <a href="">
+                                        <p>This is a pro-Tramp sub for everything the 45th president</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="button mt-3">
+                                <button class="buton">join</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row main3">
+                    <div class="col-lg-12 mt-4">
+                        <div class="comminities">
+                            <div class="image">
+                                <div class="mt-2">
+                                    <img src="../image/xvwxkNXOkvdu9d6S67odp1gCPfhB1A3qKDs7kdwO5ts.png" alt="">
+                                </div>
+                                <div>
+                                    <a href="" class="a">r/trump</a>
+                                    <a href=""><span>. 90.5k Members</span></a>
+                                    <a href="">
+                                        <p>This is a pro-Tramp sub for everything the 45th president</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="button mt-3">
+                                <button class="buton">Follow</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="comminities">
+                            <div class="image">
+                                <div class="mt-2">
+                                    <img src="../image/xvwxkNXOkvdu9d6S67odp1gCPfhB1A3qKDs7kdwO5ts.png" alt="">
+                                </div>
+                                <div>
+                                    <a href="" class="a">r/trump</a>
+                                    <a href=""><span>. 90.5k Members</span></a>
+                                    <a href="">
+                                        <p>This is a pro-Tramp sub for everything the 45th president</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="button mt-3">
+                                <button class="buton">Follow</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="comminities">
+                            <div class="image">
+                                <div class="mt-2">
+                                    <img src="../image/xvwxkNXOkvdu9d6S67odp1gCPfhB1A3qKDs7kdwO5ts.png" alt="">
+                                </div>
+                                <div>
+                                    <a href="" class="a">r/trump</a>
+                                    <a href=""><span>. 90.5k Members</span></a>
+                                    <a href="">
+                                        <p>This is a pro-Tramp sub for everything the 45th president</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="button mt-3">
+                                <button class="buton">Follow</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="comminities">
+                            <div class="image">
+                                <div class="mt-2">
+                                    <img src="../image/xvwxkNXOkvdu9d6S67odp1gCPfhB1A3qKDs7kdwO5ts.png" alt="">
+                                </div>
+                                <div>
+                                    <a href="" class="a">r/trump</a>
+                                    <a href=""><span>. 90.5k Members</span></a>
+                                    <a href="">
+                                        <p>This is a pro-Tramp sub for everything the 45th president</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="button mt-3">
+                                <button class="buton">Follow</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="comminities">
+                            <div class="image">
+                                <div class="mt-2">
+                                    <img src="../image/xvwxkNXOkvdu9d6S67odp1gCPfhB1A3qKDs7kdwO5ts.png" alt="">
+                                </div>
+                                <div>
+                                    <a href="" class="a">r/trump</a>
+                                    <a href=""><span>. 90.5k Members</span></a>
+                                    <a href="">
+                                        <p>This is a pro-Tramp sub for everything the 45th president</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="button mt-3">
+                                <button class="buton">Follow</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="myModal" class="modal">
+            <div class="modal-content">
+                <div class="conten">
+                    <div class="image">
+                        <img src="../image/Screenshot 2022-07-18 164325.png" alt="">
+                    </div>
+                    <div class="form">
+                        <div class="title">
+                            <strong>Sign up to join this community.</strong>
+                            <p class="mt-1">By continuing, you are setting up a Reddit account and agree to our <a
+                                    href="">User
+                                    Agreement</a> and <a href="">Privacy Policy</a>.</p>
+                        </div>
+                        <div class="sosial mt-5">
+                            <div class="google">
+                                <div>
+                                    <a href=""><img src="../image/s1AjSxph_400x400.jpg" alt=""></a>
+                                </div>
+                                <div>
+                                    <a href="">Continue with Google</a>
+                                </div>
+                            </div>
+                            <div class="iphone mt-2">
+                                <div>
+                                    <a href=""><img src="../image/apple-logo-E3DBF3AE34-seeklogo.com.png" alt=""></a>
+                                </div>
+                                <div>
+                                    <a href="">Continue with Apple</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="or mt-5">
+                            <div class="line"></div>
+                            <div>
+                                <p>OR</p>
+                            </div>
+                            <div class="line"></div>
+                        </div>
+                        <div class="username">
+                            <div class="input">
+                                <input type="text" placeholder="User Name" class="inp">
+                            </div>
+                        </div>
+                        <div class="Password mt-3">
+                            <div class="input">
+                                <input type="password" placeholder="EMAIL" class="inp">
+                            </div>
+                        </div>
+                        <div class="continue mt-3">
+                            <button class="button" type="submit"><strong>Continue</strong></button>
+                        </div>
+                        <div class="login mt-4">
+                            <p>Already a redditor? <a href="../html/Register.html"> <strong>Register</strong></a></p>
+                        </div>
+                    </div>
+                    <div class="clos">
+                        <span class="close">&times;</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="mrDetals" class="Detals">
+            <div class="container">
+                <div class="row">
+                    <div class="Content col-lg-12 col-12 col-md-12 col-sm-12">
+                        <nav>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-2 col-sm-2 col-md-2 col-2 icon">
+                                        <div class="line"></div>
+                                        <div><a href="#" class="i"><i class="fa-solid fa-circle-up"></i></div>
+                                        <div><a href="#">10</a></div>
+                                        <div><a href="#" class="i"><i class="fa-solid fa-circle-down"></i></a></div>
+                                        <div class="line"></div>
+                                    </div>
+                                    <div class="col-lg-8 col-sm-8 col-md-8 col-8">
+                                        <p> US Rep. Omar arrested in Washington, DC, amid protest</p>
+                                    </div>
+                                    <div class="col-lg-2 col-sm-2 col-md-2 col-2 ext">
+                                        <p class="delatsCloses"><i class="fa-solid fa-xmark"></i> Close</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="Contentmain col-lg-12 col-12 col-md-12 col-sm-12">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-8 col-md-8 col-sm-8 col-8">
+                                    <div class="main mt-4">
+                                        <div class="title mt-2">
+                                            <div class="icon">
+                                                <div><a href="#" class="i"><i class="fa-solid fa-circle-up"></i></div>
+                                                <div><a href="#">10</a></div>
+                                                <div><a href="#" class="i"><i class="fa-solid fa-circle-down"></i></a>
+                                                </div>
+                                            </div>
+                                            <div class="image">
+                                                <div class="img">
+                                                    <div><img
+                                                            src="https://styles.redditmedia.com/t5_2qh87/styles/communityIcon_ub69d1lpjlf51.png"
+                                                            alt=""></div>
+                                                    <div><a href="#"><strong class="r">r/space</strong></a></div>
+                                                </div>
+                                                <div class="Title" id="mainBtn">
+                                                    <a href="#"><strong>Something behind the moon. Astronomer Jan Koet
+                                                            captured
+                                                            this
+                                                            video.</strong></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="post" id="mainBtn">
+                                            <div>
+                                                <video width="650px" height="400px"
+                                                    src="https://preview.redd.it/9vxfblrivmb91.gif?width=600&format=mp4&s=262a685e30c7cd687b063047f81a6bbc5b806cb2"
+                                                    controls>
+                                                </video>
+                                                <!-- <img src="./image/Rtu2Mw0L-mx7AeYtHKkbAh75jQbgzy_Hk2UIlLeZFSs.png" alt=""> -->
+                                            </div>
+                                        </div>
+                                        <div class="comment">
+                                            <div class="com">
+                                                <div><a href="#"><i class="fa-regular fa-message"></i></a></div>
+                                                <div><a href="#">0</a></div>
+                                                <div><a href="#">Comments</a></div>
+                                            </div>
+                                            <div class="shar">
+                                                <div class="sidenav">
+                                                    <button class="dropdown-btn">
+                                                        <div><a><i class="fa-solid fa-share"></i></a></div>
+                                                        <div><a>Shared</a></div>
+                                                    </button>
+                                                    <div class="dropdown-container">
+                                                        <a href="#" class="a"><i class="fa-regular fa-copy"></i> Copy
+                                                            Link</a>
+                                                        <a href="#" class="a"><i
+                                                                class="fa-solid fa-arrows-left-right-to-line"></i>
+                                                            Embed</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="sav">
+                                                <div><a href="#"><i class="fa-regular fa-bookmark"></i></a></div>
+                                                <div><a href="#">Save</a></div>
+                                            </div>
+                                            <div class="addition">
+                                                <div class="sidenav">
+                                                    <button class="dropdown-btn">
+                                                        <a>......</a>
+                                                    </button>
+                                                    <div class="dropdown-container">
+                                                        <a class="a"><i class="fa-regular fa-eye-slash"></i> Hide</a>
+                                                        <a class="a"><i class="fa-regular fa-flag"></i> Report</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="cominp">
+                                            <input type="text" placeholder="What are you thoughts?">
+                                            <button type="submit">comment</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-4 col-4">
+                                    <div class="name">
+                                        <div class="image">
+                                        </div>
+                                        <div class="user">
+                                            <div class="img">
+                                                <a href="">
+                                                    <img src="https://styles.redditmedia.com/t5_2qhsa/styles/communityIcon_5v3bepmshpg81.png?width=256&s=4d4c7a59b5a0286f3e237b60eb6e0dc8948ede74"
+                                                        alt="">
+                                                </a>
+                                            </div>
+                                            <div class="username mt-3">
+                                                <a href="">r/interestingasfuck</a>
+                                            </div>
+                                        </div>
+                                        <div class="follow">
+                                            <div class="namemore">
+                                                <p>Welcome to r/Funny, Reddit's largest humour depository.</p>
+                                            </div>
+                                            <div class="member">
+                                                <div>
+                                                    <p>5m</p>
+                                                    <p class="onm">Members</p>
+                                                </div>
+                                                <div>
+                                                    <p>3k</p>
+                                                    <p class="onm">Online</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="age">
+                                            <div><i class="fa-solid fa-cake-candles"></i></div>
+                                            <div>
+                                                <p>Created Feb</p>
+                                            </div>
+                                            <div>
+                                                <p>25, 2016</p>
+                                            </div>
+                                        </div>
+                                        <div class="joinBtn">
+                                            <button><strong>join</strong></button>
+                                        </div>
+                                    </div>
+                                    <div class="about mt-3">
+                                        <div class="allabout">
+                                            <div>
+                                                <a href="">
+                                                    <p>Help</p>
+                                                </a>
+                                                <a href="">
+                                                    <p>Reddit Coins</p>
+                                                </a>
+                                                <a href="">
+                                                    <p>Reddit Premium</p>
+                                                </a>
+                                            </div>
+                                            <div>
+                                                <a href="">
+                                                    <p>About</p>
+                                                </a>
+                                                <a href="">
+                                                    <p>Careers</p>
+                                                </a>
+                                                <a href="">
+                                                    <p>Press</p>
+                                                </a>
+                                                <a href="">
+                                                    <p>Advertise</p>
+                                                </a>
+                                                <a href="">
+                                                    <p>Blog</p>
+                                                </a>
+                                                <a href="">
+                                                    <p>Terms</p>
+                                                </a>
+                                                <a href="">
+                                                    <p>Content Policy</p>
+                                                </a>
+                                                <a href="">
+                                                    <p>Privacy Policy</p>
+                                                </a>
+                                                <a href="">
+                                                    <p>ModPolicy</p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="px-2">
+                                            <p>Reddit Inc © 2022. All rights reserved</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="../js/trend.js"></script>
+    <script src="/Bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>
